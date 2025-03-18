@@ -9,7 +9,7 @@ public class MainRunner
         Baloon b5 = new Baloon("Yellow", 10, false, "Oval");
         Baloon b6 = new Baloon("Pink", 8, true, "Round", 0.5);
         Baloon b7 = new Baloon("Purple", 6, false, "Heart", 0.3, "Latex");
-        System.out.println("**********************************************");		
+       	
 
         Holi h1 = new Holi();
         Holi h2 = new Holi("Holi");
@@ -18,7 +18,7 @@ public class MainRunner
         Holi h5 = new Holi("Holi", "March 25", "India", true);
         Holi h6 = new Holi("Holi", "March 25", "India", true, 2);
         Holi h7 = new Holi("Holi", "March 25", "India", true, 2, "Festival of Colors");
-		System.out.println("**********************************************");
+		
 		
 		Pichkari p1 = new Pichkari();
         Pichkari p2 = new Pichkari("Water Gun");
@@ -27,7 +27,7 @@ public class MainRunner
         Pichkari p5 = new Pichkari("Water Gun", 500, "Blue", 30.5);
         Pichkari p6 = new Pichkari("Water Gun", 500, "Blue", 30.5, true);
         Pichkari p7 = new Pichkari("Water Gun", 500, "Blue", 30.5, true, "Plastic");
-		System.out.println("**********************************************");
+		
 
         Color c1 = new Color();
         Color c2 = new Color("Red");
@@ -36,7 +36,7 @@ public class MainRunner
         Color c5 = new Color("Red", "Organic", true, "Bright");
         Color c6 = new Color("Red", "Organic", true, "Bright", 200);
         Color c7 = new Color("Red", "Organic", true, "Bright", 200, "India");
-		System.out.println("**********************************************");
+		
 		
 		Egg e1 = new Egg();
         Egg e2 = new Egg("Chicken");
@@ -45,7 +45,7 @@ public class MainRunner
         Egg e5 = new Egg("Chicken", 50, "White", false);
         Egg e6 = new Egg("Chicken", 50, "White", false, "Farm");
         Egg e7 = new Egg("Chicken", 50, "White", false, "Farm", 12);
-		System.out.println("**********************************************");
+		
 
         Bucket bk1 = new Bucket();
         Bucket bk2 = new Bucket("Plastic");
@@ -54,7 +54,7 @@ public class MainRunner
         Bucket bk5 = new Bucket("Plastic", 10, "Blue", true);
         Bucket bk6 = new Bucket("Plastic", 10, "Blue", true, 30);
         Bucket bk7 = new Bucket("Plastic", 10, "Blue", true, 30, "Cylindrical");
-		System.out.println("**********************************************");
+		
 		
 		Tomato t1 = new Tomato();
         Tomato t2 = new Tomato("Cherry");
@@ -63,7 +63,7 @@ public class MainRunner
         Tomato t5 = new Tomato("Cherry", 50, "Red", true);
         Tomato t6 = new Tomato("Cherry", 50, "Red", true, "Farm");
         Tomato t7 = new Tomato("Cherry", 50, "Red", true, "Farm", 12);
-		System.out.println("**********************************************");
+		
 
         WaterBall w1 = new WaterBall();
         WaterBall w2 = new WaterBall("Rubber");
@@ -72,7 +72,7 @@ public class MainRunner
         WaterBall w5 = new WaterBall("Rubber", 15, "Blue", true);
         WaterBall w6 = new WaterBall("Rubber", 15, "Blue", true, 200);
         WaterBall w7 = new WaterBall("Rubber", 15, "Blue", true, 200, "Sphere");
-		System.out.println("**********************************************");
+		
 		
 		Gun g1 = new Gun();
         Gun g2 = new Gun("Water Gun");
@@ -81,7 +81,7 @@ public class MainRunner
         Gun g5 = new Gun("Water Gun", "Plastic", 20, true);
         Gun g6 = new Gun("Water Gun", "Plastic", 20, true, "Blue");
         Gun g7 = new Gun("Water Gun", "Plastic", 20, true, "Blue", 500);
-		System.out.println("**********************************************");
+		
 
         NailPolish n1 = new NailPolish();
         NailPolish n2 = new NailPolish("Lakme");
@@ -90,7 +90,7 @@ public class MainRunner
         NailPolish n5 = new NailPolish("Lakme", "Red", 10, true);
         NailPolish n6 = new NailPolish("Lakme", "Red", 10, true, "Matte");
         NailPolish n7 = new NailPolish("Lakme", "Red", 10, true, "Matte", 199);
-		System.out.println("**********************************************");
+		
 
 		
         Water wa1 = new Water();
