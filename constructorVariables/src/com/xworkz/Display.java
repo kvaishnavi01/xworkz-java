@@ -7,3 +7,4 @@ public class Display {
         System.out.println("Display class is running");
     }
 }
+
