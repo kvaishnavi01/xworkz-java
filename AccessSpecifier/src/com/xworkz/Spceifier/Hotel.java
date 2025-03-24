@@ -17,3 +17,4 @@ public class Hotel {
         System.out.println("Serving delicious meals to guests.");
     }
 }
+

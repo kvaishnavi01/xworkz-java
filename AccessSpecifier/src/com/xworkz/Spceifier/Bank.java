@@ -18,6 +18,5 @@ public class Bank {
         void Accounts() {
            System.out.println("we have "+totalAccounts+ " Accounts");
         }
-    }
-
+}
 

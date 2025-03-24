@@ -17,3 +17,4 @@ public class Mall {
         System.out.print("Thankyou for shopping");
     }
 }
+

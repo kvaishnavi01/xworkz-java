@@ -15,3 +15,4 @@ public class MallRunner {
         m1.shop();
     }
 }
+

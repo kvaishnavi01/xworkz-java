@@ -15,3 +15,4 @@ public class HospitalRunner {
         h1.treatPatients();
     }
 }
+

@@ -17,3 +17,4 @@ public class Hospital {
         System.out.println("Doctors are treating patients.");
     }
 }
+
