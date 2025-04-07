@@ -29,4 +29,8 @@ public class WashingMachine extends Machine {
     public void maintain() {
         System.out.println("Washing Machine is being cleaned and serviced");
     }
+
+    public  void wash(){
+        System.out.println("Washing clothes");
+    }
 }

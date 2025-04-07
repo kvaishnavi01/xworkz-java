@@ -6,27 +6,31 @@ public class Bridge extends Structure {
     }
 
     @Override
-    public void provideSupport() {
-        System.out.println("Bridge supports the movement of vehicles and people");
+    public void build() {
+        System.out.println("Bridge is constructed over a river");
     }
 
     @Override
-    public void withstandLoad() {
-        System.out.println("Bridge handles dynamic and static load");
+    public void supportWeight() {
+        System.out.println("Bridge supports heavy vehicles");
     }
 
     @Override
-    public void occupySpace() {
-        System.out.println("Bridge spans across two points");
+    public void withstandWeather() {
+        System.out.println("Bridge is resistant to wind and rain");
     }
 
     @Override
-    public void endureWeather() {
-        System.out.println("Bridge resists wind, rain, and temperature changes");
+    public void provideShelter() {
+        System.out.println("Bridge does not usually provide shelter");
     }
 
     @Override
-    public void defineShape() {
-        System.out.println("Bridge structure defines architectural aesthetics and function");
+    public void maintain() {
+        System.out.println("Bridge requires structural maintenance");
+    }
+
+    public void allowTransport() {
+        System.out.println("Bridge allows transport across obstacles");
     }
 }

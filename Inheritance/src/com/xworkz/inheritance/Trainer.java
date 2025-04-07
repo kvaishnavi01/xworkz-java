@@ -5,23 +5,23 @@ public class Trainer {
         System.out.println("no args const of Trainer");
     }
 
-    public void planSchedule() {
-        System.out.println("Trainer is planning a workout schedule");
+    public void giveInstructions() {
+        System.out.println("Trainer gives general instructions");
     }
 
-    public void conductSession() {
-        System.out.println("Trainer is conducting a training session");
+    public void scheduleSessions() {
+        System.out.println("Trainer schedules training sessions");
     }
 
-    public void motivateClient() {
-        System.out.println("Trainer is motivating the client");
+    public void motivate() {
+        System.out.println("Trainer motivates the trainees");
     }
 
-    public void trackProgress() {
-        System.out.println("Trainer is tracking fitness progress");
+    public void monitorProgress() {
+        System.out.println("Trainer monitors trainees' progress");
     }
 
     public void giveFeedback() {
-        System.out.println("Trainer is giving feedback to client");
+        System.out.println("Trainer provides feedback after sessions");
     }
 }

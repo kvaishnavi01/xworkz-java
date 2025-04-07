@@ -6,22 +6,22 @@ public class Molecule {
     }
 
     public void bond() {
-        System.out.println("Molecule forms bonds with other atoms");
+        System.out.println("Molecule forms bonds");
     }
 
     public void vibrate() {
-        System.out.println("Molecule vibrates at specific frequencies");
+        System.out.println("Molecule vibrates at a certain frequency");
     }
 
     public void react() {
         System.out.println("Molecule participates in chemical reactions");
     }
 
-    public void absorbEnergy() {
-        System.out.println("Molecule absorbs energy under specific conditions");
+    public void split() {
+        System.out.println("Molecule splits into smaller parts");
     }
 
-    public void move() {
-        System.out.println("Molecule moves randomly in space");
+    public void combine() {
+        System.out.println("Molecule combines with other molecules");
     }
 }

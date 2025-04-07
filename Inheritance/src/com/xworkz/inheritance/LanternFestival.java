@@ -29,4 +29,8 @@ public class LanternFestival extends Festival {
     public void serveFood() {
         System.out.println("Traditional dumplings are served during the Lantern Festival");
     }
+
+    public void releaseLanterns() {
+        System.out.println("People release lanterns into the sky or water");
+    }
 }

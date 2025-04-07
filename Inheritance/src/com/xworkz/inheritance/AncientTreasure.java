@@ -6,27 +6,31 @@ public class AncientTreasure extends Treasure {
     }
 
     @Override
-    public void discover() {
-        System.out.println("Ancient treasure discovered inside a hidden temple");
+    public void hide() {
+        System.out.println("Ancient treasure is hidden in forgotten ruins");
     }
 
     @Override
-    public void unlock() {
-        System.out.println("Ancient treasure unlocked using a secret code");
+    public void guard() {
+        System.out.println("Ancient treasure is guarded by ancient curses");
     }
 
     @Override
-    public void evaluate() {
-        System.out.println("Ancient treasure evaluated by archaeologists");
+    public void shine() {
+        System.out.println("Ancient treasure gleams with historic artifacts");
     }
 
     @Override
-    public void preserve() {
-        System.out.println("Ancient treasure preserved using climate control");
+    public void attractSeekers() {
+        System.out.println("Ancient treasure attracts archaeologists and historians");
     }
 
     @Override
-    public void display() {
-        System.out.println("Ancient treasure displayed at world heritage exhibit");
+    public void holdValue() {
+        System.out.println("Ancient treasure holds cultural and historical value");
+    }
+
+    public void revealHistory() {
+        System.out.println("Ancient treasure reveals secrets of the past");
     }
 }

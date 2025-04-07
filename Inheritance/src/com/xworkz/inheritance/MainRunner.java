@@ -1,5 +1,7 @@
 package com.xworkz.inheritance;
 
+import com.sun.javafx.scene.control.skin.MenuButtonSkinBase;
+
 public class MainRunner {
     public static void main(String[] args) {
         Animal animal = new Animal();
@@ -22,6 +24,11 @@ public class MainRunner {
         dog.makeSound();
         dog.run();
         dog.breathe();
+
+        Pug pug=new Pug();
+        pug.behaviour(animal);
+        pug.behaviour(dog);
+        pug.behaviour(animalDog);
         System.out.println("######################################################");
 
         Vehicle vehicle = new Vehicle();
@@ -44,6 +51,11 @@ public class MainRunner {
         car.accelerate();
         car.brake();
         car.honk();
+
+        Bmw bmw=new Bmw();
+        bmw.rides(vehicle);
+        bmw.rides(car);
+        bmw.rides(vehicleRef);
         System.out.println("######################################################");
 
         Gadget gadget = new Gadget();
@@ -66,6 +78,11 @@ public class MainRunner {
         phone.charge();
         phone.reset();
         phone.connectToWifi();
+
+        Samsung samsung=new Samsung();
+        samsung.using(gadget);
+        samsung.using(gadgetRef);
+        samsung.using(phone);
         System.out.println("######################################################");
 
 
@@ -89,6 +106,11 @@ public class MainRunner {
         guitarist.perform();
         guitarist.compose();
         guitarist.tuneInstrument();
+
+        ElectricG electricG=new ElectricG();
+        electricG.connect(musician);
+        electricG.connect(guitarist);
+        electricG.connect(musicianRef);
         System.out.println("######################################################");
 
         Artist artist = new Artist();
@@ -111,6 +133,11 @@ public class MainRunner {
         painter.sketch();
         painter.mixColors();
         painter.displayArt();
+
+        Rony rony=new Rony();
+        rony.create(artist);
+        rony.create(artistRef);
+        rony.create(painter);
         System.out.println("######################################################");
 
         Athlete athlete = new Athlete();
@@ -133,6 +160,11 @@ public class MainRunner {
         runner.compete();
         runner.rest();
         runner.hydrate();
+
+        Swimmer swimmer=new Swimmer();
+        swimmer.swim(athlete);
+        swimmer.swim(athleteRef);
+        swimmer.swim(runner);
         System.out.println("######################################################");
 
         Tree tree = new Tree();
@@ -155,6 +187,11 @@ public class MainRunner {
         mangoTree.provideShade();
         mangoTree.absorbWater();
         mangoTree.releaseOxygen();
+
+        Apple apple=new Apple();
+        apple.color(tree);
+        apple.color(treeRef);
+        apple.color(mangoTree);
         System.out.println("######################################################");
 
         OperatingSystem os = new OperatingSystem();
@@ -177,6 +214,11 @@ public class MainRunner {
         linux.runApplication();
         linux.update();
         linux.displayInfo();
+
+        MacOS macOS=new MacOS();
+        macOS.start(os);
+        macOS.start(osRef);
+        macOS.start(linux);
         System.out.println("######################################################");
 
         Cook cook = new Cook();
@@ -199,6 +241,11 @@ public class MainRunner {
         chef.cleanKitchen();
         chef.serveFood();
         chef.storeLeftovers();
+
+        ChineseChef chineseChef=new ChineseChef();
+        chineseChef.noodles(chef);
+        chineseChef.noodles(cook);
+        chineseChef.noodles(cookRef);
         System.out.println("######################################################");
 
         Robot robot = new Robot();
@@ -221,6 +268,11 @@ public class MainRunner {
         cleanBot.recharge();
         cleanBot.move();
         cleanBot.processTask();
+
+        AiRobot aiRobot=new AiRobot();
+        aiRobot.code(robot);
+        aiRobot.code(robotRef);
+        aiRobot.code(cleanBot);
         System.out.println("######################################################");
 
         Instrument instrument = new Instrument();
@@ -265,6 +317,11 @@ public class MainRunner {
         fashionDesigner.selectMaterial();
         fashionDesigner.collaborate();
         fashionDesigner.finalizeDesign();
+
+        PosterDesigner posterDesigner=new PosterDesigner();
+        posterDesigner.design(designer);
+        posterDesigner.design(designerRef);
+        posterDesigner.design(fashionDesigner);
         System.out.println("######################################################");
 
         Machine machine = new Machine();
@@ -287,6 +344,11 @@ public class MainRunner {
         wm.operate();
         wm.monitor();
         wm.maintain();
+
+        Oven oven=new Oven();
+        oven.cook(machine);
+        oven.cook(machineRef);
+        oven.cook(wm);
         System.out.println("######################################################");
 
         Transport transport = new Transport();
@@ -309,6 +371,11 @@ public class MainRunner {
         airplane.stop();
         airplane.load();
         airplane.unload();
+
+        Bus bus=new Bus();
+        bus.drive(transport);
+        bus.drive(transportRef);
+        bus.drive(airplane);
         System.out.println("######################################################");
 
         Flower flower = new Flower();
@@ -331,6 +398,11 @@ public class MainRunner {
         rose.absorbSunlight();
         rose.attractBees();
         rose.wilt();
+
+        Daisy daisy=new Daisy();
+        daisy.color(flower);
+        daisy.color(flowerRef);
+        daisy.color(rose);
         System.out.println("######################################################");
 
         Employee employee = new Employee();
@@ -353,6 +425,11 @@ public class MainRunner {
         manager.submitReport();
         manager.takeBreak();
         manager.logout();
+
+        HR hr=new HR();
+        hr.hire(employee);
+        hr.hire(employeeRef);
+        hr.hire(manager);
         System.out.println("######################################################");
 
         Player player = new Player();
@@ -375,6 +452,11 @@ public class MainRunner {
         cricketer.travel();
         cricketer.rest();
         cricketer.followDiet();
+
+        Soccer soccer=new Soccer();
+        soccer.kick(player);
+        soccer.kick(playerRef);
+        soccer.kick(cricketer);
         System.out.println("######################################################");
 
         Appliance appliance = new Appliance();
@@ -397,6 +479,11 @@ public class MainRunner {
         microwave.switchOff();
         microwave.checkPower();
         microwave.displayStatus();
+
+        Stove stove=new Stove();
+        stove.fire(appliance);
+        stove.fire(applianceRef);
+        stove.fire(microwave);
         System.out.println("######################################################");
 
         Fossil fossil = new Fossil();
@@ -419,6 +506,11 @@ public class MainRunner {
         bone.date();
         bone.preserve();
         bone.catalog();
+
+        HumanBone humanBone=new HumanBone();
+        humanBone.decompose(fossil);
+        humanBone.decompose(fossilRef);
+        humanBone.decompose(bone);
         System.out.println("######################################################");
 
         Satellite satellite = new Satellite();
@@ -441,6 +533,11 @@ public class MainRunner {
         weatherSatellite.receiveSignal();
         weatherSatellite.adjustPosition();
         weatherSatellite.monitorSystems();
+
+        GPS gps=new GPS();
+        gps.direction(satellite);
+        gps.direction(satelliteRef);
+        gps.direction(weatherSatellite);
         System.out.println("######################################################");
 
         Beverage beverage = new Beverage();
@@ -463,6 +560,11 @@ public class MainRunner {
         drink.chill();
         drink.openCap();
         drink.shake();
+
+        softDrink softDrink=new softDrink();
+        softDrink.flavor(beverage);
+        softDrink.flavor(beverageRef);
+        softDrink.flavor(drink);
         System.out.println("######################################################");
 
         Volcano volcano = new Volcano();
@@ -485,6 +587,11 @@ public class MainRunner {
         active.shakeGround();
         active.releaseGases();
         active.formCrater();
+
+        NonActive nonActive=new NonActive();
+        nonActive.fire(volcano);
+        nonActive.fire(volcanoRef);
+        nonActive.fire(active);
         System.out.println("######################################################");
 
         Puzzle puzzle = new Puzzle();
@@ -507,6 +614,11 @@ public class MainRunner {
         cube.display();
         cube.reset();
         cube.checkCompletion();
+
+        Jigsaw jigsaw=new Jigsaw();
+        jigsaw.stick(puzzle);
+        jigsaw.stick(puzzleRef);
+        jigsaw.stick(cube);
         System.out.println("######################################################");
 
         Festival festival = new Festival();
@@ -529,579 +641,717 @@ public class MainRunner {
         lantern.performRituals();
         lantern.decorate();
         lantern.serveFood();
+
+        FestivalEvent event = new FestivalEvent();
+        event.handleFestival(festival);
+        event.handleFestival(lantern);
+        event.handleFestival(festivalRef);
         System.out.println("######################################################");
 
         Sculpture sculpture = new Sculpture();
         sculpture.carve();
         sculpture.polish();
-        sculpture.transport();
         sculpture.display();
-        sculpture.maintain();
+        sculpture.transport();
+        sculpture.restore();
 
         Sculpture sculptureRef = new IceSculpture();
         sculptureRef.carve();
         sculptureRef.polish();
-        sculptureRef.transport();
         sculptureRef.display();
-        sculptureRef.maintain();
+        sculptureRef.transport();
+        sculptureRef.restore();
 
         IceSculpture ice = new IceSculpture();
         ice.carve();
         ice.polish();
-        ice.transport();
         ice.display();
-        ice.maintain();
+        ice.transport();
+        ice.restore();
+
+        SculptureEvent e = new SculptureEvent();
+        e.manage(sculpture);
+        e.manage(ice);
+        e.manage(sculptureRef);
         System.out.println("######################################################");
 
         Potion potion = new Potion();
-        potion.mixIngredients();
-        potion.boil();
+        potion.mix();
         potion.bottle();
         potion.label();
+        potion.store();
         potion.test();
 
         Potion potionRef = new HealingPotion();
-        potionRef.mixIngredients();
-        potionRef.boil();
+        potionRef.mix();
         potionRef.bottle();
         potionRef.label();
+        potionRef.store();
         potionRef.test();
 
-        HealingPotion heal = new HealingPotion();
-        heal.mixIngredients();
-        heal.boil();
-        heal.bottle();
-        heal.label();
-        heal.test();
+        HealingPotion healing = new HealingPotion();
+        healing.mix();
+        healing.bottle();
+        healing.label();
+        healing.store();
+        healing.test();
+
+        PotionLab lab = new PotionLab();
+        lab.inspect(potion);
+        lab.inspect(healing);
+        lab.inspect(potionRef);
         System.out.println("######################################################");
 
         Comedian comedian = new Comedian();
-        comedian.writeJokes();
-        comedian.rehearse();
-        comedian.perform();
-        comedian.interactWithAudience();
-        comedian.uploadVideo();
+        comedian.tellJoke();
+        comedian.mimic();
+        comedian.improvise();
+        comedian.writeScript();
+        comedian.entertain();
 
-        Comedian comedianRef = new StandUpComedian();
-        comedianRef.writeJokes();
-        comedianRef.rehearse();
-        comedianRef.perform();
-        comedianRef.interactWithAudience();
-        comedianRef.uploadVideo();
+        Comedian standupRef = new StandUpComedian();
+        standupRef.tellJoke();
+        standupRef.mimic();
+        standupRef.improvise();
+        standupRef.writeScript();
+        standupRef.entertain();
 
         StandUpComedian standup = new StandUpComedian();
-        standup.writeJokes();
-        standup.rehearse();
-        standup.perform();
-        standup.interactWithAudience();
-        standup.uploadVideo();
+        standup.tellJoke();
+        standup.mimic();
+        standup.improvise();
+        standup.writeScript();
+        standup.entertain();
+
+        ComedyClub club = new ComedyClub();
+        club.hostShow(comedian);
+        club.hostShow(standupRef);
+        club.hostShow(standup);
+
         System.out.println("######################################################");
 
         Photographer photographer = new Photographer();
-        photographer.capturePhoto();
+        photographer.takePhoto();
         photographer.editPhoto();
-        photographer.printPhoto();
-        photographer.uploadPhoto();
-        photographer.organizeAlbum();
+        photographer.setupEquipment();
+        photographer.selectLocation();
+        photographer.processImages();
 
-        Photographer photoRef = new WildlifePhotographer();
-        photoRef.capturePhoto();
-        photoRef.editPhoto();
-        photoRef.printPhoto();
-        photoRef.uploadPhoto();
-        photoRef.organizeAlbum();
+        Photographer photographerRef = new WildlifePhotographer();
+        photographerRef.takePhoto();
+        photographerRef.editPhoto();
+        photographerRef.setupEquipment();
+        photographerRef.selectLocation();
+        photographerRef.processImages();
 
-        WildlifePhotographer wild = new WildlifePhotographer();
-        wild.capturePhoto();
-        wild.editPhoto();
-        wild.printPhoto();
-        wild.uploadPhoto();
-        wild.organizeAlbum();
+        WildlifePhotographer wildlife = new WildlifePhotographer();
+        wildlife.takePhoto();
+        wildlife.editPhoto();
+        wildlife.setupEquipment();
+        wildlife.selectLocation();
+        wildlife.processImages();
+
+        Exhibition exhibition = new Exhibition();
+        exhibition.showcase(photographer);
+        exhibition.showcase(wildlife);
+        exhibition.showcase(photographerRef);
         System.out.println("######################################################");
 
         Treasure treasure = new Treasure();
-        treasure.discover();
-        treasure.unlock();
-        treasure.evaluate();
-        treasure.preserve();
-        treasure.display();
+        treasure.hide();
+        treasure.guard();
+        treasure.shine();
+        treasure.attractSeekers();
+        treasure.holdValue();
 
         Treasure treasureRef = new AncientTreasure();
-        treasureRef.discover();
-        treasureRef.unlock();
-        treasureRef.evaluate();
-        treasureRef.preserve();
-        treasureRef.display();
+        treasureRef.hide();
+        treasureRef.guard();
+        treasureRef.shine();
+        treasureRef.attractSeekers();
+        treasureRef.holdValue();
 
         AncientTreasure ancient = new AncientTreasure();
-        ancient.discover();
-        ancient.unlock();
-        ancient.evaluate();
-        ancient.preserve();
-        ancient.display();
+        ancient.hide();
+        ancient.guard();
+        ancient.shine();
+        ancient.attractSeekers();
+        ancient.holdValue();
+
+        TreasureHunter hunter = new TreasureHunter();
+        hunter.inspect(treasure);
+        hunter.inspect(ancient);
+        hunter.inspect(treasureRef);
         System.out.println("######################################################");
 
         Journalist journalist = new Journalist();
-        journalist.research();
         journalist.writeArticle();
-        journalist.interviewPeople();
-        journalist.attendConference();
-        journalist.publish();
+        journalist.attendPressMeet();
+        journalist.interview();
+        journalist.publishNews();
+        journalist.travel();
 
         Journalist journalistRef = new InvestigativeJournalist();
-        journalistRef.research();
         journalistRef.writeArticle();
-        journalistRef.interviewPeople();
-        journalistRef.attendConference();
-        journalistRef.publish();
+        journalistRef.attendPressMeet();
+        journalistRef.interview();
+        journalistRef.publishNews();
+        journalistRef.travel();
 
         InvestigativeJournalist investigative = new InvestigativeJournalist();
-        investigative.research();
         investigative.writeArticle();
-        investigative.interviewPeople();
-        investigative.attendConference();
-        investigative.publish();
+        investigative.attendPressMeet();
+        investigative.interview();
+        investigative.publishNews();
+        investigative.travel();
+
+        NewsAgency agency = new NewsAgency();
+        agency.report(journalist);
+        agency.report(investigative);
+        agency.report(journalistRef);
         System.out.println("######################################################");
 
         Trainer trainer = new Trainer();
-        trainer.planSchedule();
-        trainer.conductSession();
-        trainer.motivateClient();
-        trainer.trackProgress();
+        trainer.giveInstructions();
+        trainer.scheduleSessions();
+        trainer.motivate();
+        trainer.monitorProgress();
         trainer.giveFeedback();
 
         Trainer trainerRef = new FitnessTrainer();
-        trainerRef.planSchedule();
-        trainerRef.conductSession();
-        trainerRef.motivateClient();
-        trainerRef.trackProgress();
+        trainerRef.giveInstructions();
+        trainerRef.scheduleSessions();
+        trainerRef.motivate();
+        trainerRef.monitorProgress();
         trainerRef.giveFeedback();
 
-        FitnessTrainer fitTrainer = new FitnessTrainer();
-        fitTrainer.planSchedule();
-        fitTrainer.conductSession();
-        fitTrainer.motivateClient();
-        fitTrainer.trackProgress();
-        fitTrainer.giveFeedback();
+        FitnessTrainer fitness = new FitnessTrainer();
+        fitness.giveInstructions();
+        fitness.scheduleSessions();
+        fitness.motivate();
+        fitness.monitorProgress();
+        fitness.giveFeedback();
+
+        Gym gym = new Gym();
+        gym.conduct(trainer);
+        gym.conduct(fitness);
+        gym.conduct(trainerRef);
         System.out.println("######################################################");
 
         Currency currency = new Currency();
+        currency.use();
         currency.exchange();
         currency.storeValue();
-        currency.actAsMedium();
-        currency.provideUnit();
-        currency.recognizeLegally();
+        currency.measureValue();
+        currency.legalStatus();
 
         Currency currencyRef = new Cryptocurrency();
+        currencyRef.use();
         currencyRef.exchange();
         currencyRef.storeValue();
-        currencyRef.actAsMedium();
-        currencyRef.provideUnit();
-        currencyRef.recognizeLegally();
+        currencyRef.measureValue();
+        currencyRef.legalStatus();
 
         Cryptocurrency crypto = new Cryptocurrency();
+        crypto.use();
         crypto.exchange();
         crypto.storeValue();
-        crypto.actAsMedium();
-        crypto.provideUnit();
-        crypto.recognizeLegally();
+        crypto.measureValue();
+        crypto.legalStatus();
+
+        Wallet wallet = new Wallet();
+        wallet.process(currency);
+        wallet.process(crypto);
+        wallet.process(currencyRef);
         System.out.println("######################################################");
 
         Scientist scientist = new Scientist();
-        scientist.conductResearch();
-        scientist.writePapers();
-        scientist.attendSeminars();
+        scientist.research();
+        scientist.publish();
         scientist.experiment();
         scientist.collaborate();
+        scientist.attendConference();
 
         Scientist scientistRef = new QuantumPhysicist();
-        scientistRef.conductResearch();
-        scientistRef.writePapers();
-        scientistRef.attendSeminars();
+        scientistRef.research();
+        scientistRef.publish();
         scientistRef.experiment();
         scientistRef.collaborate();
+        scientistRef.attendConference();
 
-        QuantumPhysicist quantum = new QuantumPhysicist();
-        quantum.conductResearch();
-        quantum.writePapers();
-        quantum.attendSeminars();
-        quantum.experiment();
-        quantum.collaborate();
+        QuantumPhysicist qp = new QuantumPhysicist();
+        qp.research();
+        qp.publish();
+        qp.experiment();
+        qp.collaborate();
+        qp.attendConference();
+
+        ResearchLab labb = new ResearchLab();
+        labb.conductSession(scientist);
+        labb.conductSession(qp);
+        labb.conductSession(scientistRef);
         System.out.println("######################################################");
 
         Signal signal = new Signal();
         signal.transmit();
         signal.receive();
-        signal.amplify();
+        signal.encode();
         signal.decode();
-        signal.modulate();
+        signal.analyze();
 
         Signal signalRef = new WirelessSignal();
         signalRef.transmit();
         signalRef.receive();
-        signalRef.amplify();
+        signalRef.encode();
         signalRef.decode();
-        signalRef.modulate();
+        signalRef.analyze();
 
-        WirelessSignal wireless = new WirelessSignal();
-        wireless.transmit();
-        wireless.receive();
-        wireless.amplify();
-        wireless.decode();
-        wireless.modulate();
+        WirelessSignal ws = new WirelessSignal();
+        ws.transmit();
+        ws.receive();
+        ws.encode();
+        ws.decode();
+        ws.analyze();
+
+        SignalProcessor processor = new SignalProcessor();
+        processor.process(signal);
+        processor.process(ws);
+        processor.process(signalRef);
         System.out.println("######################################################");
 
-        Ecosystem eco = new Ecosystem();
-        eco.supportLife();
-        eco.cycleNutrients();
-        eco.maintainBalance();
-        eco.regulateClimate();
-        eco.purifyAir();
+        Ecosystem ecosystem = new Ecosystem();
+        ecosystem.supportLife();
+        ecosystem.regulateClimate();
+        ecosystem.cycleNutrients();
+        ecosystem.maintainSoil();
+        ecosystem.purifyWater();
 
         Ecosystem ecoRef = new RainforestEcosystem();
         ecoRef.supportLife();
-        ecoRef.cycleNutrients();
-        ecoRef.maintainBalance();
         ecoRef.regulateClimate();
-        ecoRef.purifyAir();
+        ecoRef.cycleNutrients();
+        ecoRef.maintainSoil();
+        ecoRef.purifyWater();
 
         RainforestEcosystem rainforest = new RainforestEcosystem();
         rainforest.supportLife();
-        rainforest.cycleNutrients();
-        rainforest.maintainBalance();
         rainforest.regulateClimate();
-        rainforest.purifyAir();
+        rainforest.cycleNutrients();
+        rainforest.maintainSoil();
+        rainforest.purifyWater();
+
+        EcosystemMonitor monitor = new EcosystemMonitor();
+        monitor.inspect(ecosystem);
+        monitor.inspect(rainforest);
+        monitor.inspect(ecoRef);
         System.out.println("######################################################");
 
         Motor motor = new Motor();
-        motor.rotate();
-        motor.consumeEnergy();
-        motor.produceTorque();
-        motor.operateContinuously();
+        motor.start();
         motor.stop();
+        motor.increaseSpeed();
+        motor.decreaseSpeed();
+        motor.checkTemperature();
 
         Motor motorRef = new ElectricMotor();
-        motorRef.rotate();
-        motorRef.consumeEnergy();
-        motorRef.produceTorque();
-        motorRef.operateContinuously();
+        motorRef.start();
         motorRef.stop();
+        motorRef.increaseSpeed();
+        motorRef.decreaseSpeed();
+        motorRef.checkTemperature();
 
-        ElectricMotor emotor = new ElectricMotor();
-        emotor.rotate();
-        emotor.consumeEnergy();
-        emotor.produceTorque();
-        emotor.operateContinuously();
-        emotor.stop();
+        ElectricMotor electric = new ElectricMotor();
+        electric.start();
+        electric.stop();
+        electric.increaseSpeed();
+        electric.decreaseSpeed();
+        electric.checkTemperature();
+
+        MotorTester tester = new MotorTester();
+        tester.testMotor(motor);
+        tester.testMotor(electric);
+        tester.testMotor(motorRef);
         System.out.println("######################################################");
 
         Structure structure = new Structure();
-        structure.provideSupport();
-        structure.withstandLoad();
-        structure.occupySpace();
-        structure.endureWeather();
-        structure.defineShape();
+        structure.build();
+        structure.supportWeight();
+        structure.withstandWeather();
+        structure.provideShelter();
+        structure.maintain();
 
         Structure structureRef = new Bridge();
-        structureRef.provideSupport();
-        structureRef.withstandLoad();
-        structureRef.occupySpace();
-        structureRef.endureWeather();
-        structureRef.defineShape();
+        structureRef.build();
+        structureRef.supportWeight();
+        structureRef.withstandWeather();
+        structureRef.provideShelter();
+        structureRef.maintain();
 
         Bridge bridge = new Bridge();
-        bridge.provideSupport();
-        bridge.withstandLoad();
-        bridge.occupySpace();
-        bridge.endureWeather();
-        bridge.defineShape();
+        bridge.build();
+        bridge.supportWeight();
+        bridge.withstandWeather();
+        bridge.provideShelter();
+        bridge.maintain();
+
+        StructureInspector inspector = new StructureInspector();
+        inspector.inspect(structure);
+        inspector.inspect(bridge);
+        inspector.inspect(structureRef);
         System.out.println("######################################################");
 
-        Encryption enc = new Encryption();
-        enc.encrypt();
-        enc.decrypt();
-        enc.useKey();
-        enc.protectData();
-        enc.verifyIntegrity();
+        Encryption encryption = new Encryption();
+        encryption.encrypt();
+        encryption.decrypt();
+        encryption.generateKey();
+        encryption.validateData();
+        encryption.terminateSession();
 
-        Encryption encRef = new AesEncryption();
-        encRef.encrypt();
-        encRef.decrypt();
-        encRef.useKey();
-        encRef.protectData();
-        encRef.verifyIntegrity();
+        Encryption encryptionRef = new AesEncryption();
+        encryptionRef.encrypt();
+        encryptionRef.decrypt();
+        encryptionRef.generateKey();
+        encryptionRef.validateData();
+        encryptionRef.terminateSession();
 
         AesEncryption aes = new AesEncryption();
         aes.encrypt();
         aes.decrypt();
-        aes.useKey();
-        aes.protectData();
-        aes.verifyIntegrity();
+        aes.generateKey();
+        aes.validateData();
+        aes.terminateSession();
+
+        EncryptionTester testerr = new EncryptionTester();
+        testerr.test(encryption);
+        testerr.test(aes);
+        testerr.test(encryptionRef);
         System.out.println("######################################################");
 
-        Molecule mol = new Molecule();
-        mol.bond();
-        mol.vibrate();
-        mol.react();
-        mol.absorbEnergy();
-        mol.move();
+        Molecule molecule = new Molecule();
+        molecule.bond();
+        molecule.vibrate();
+        molecule.react();
+        molecule.split();
+        molecule.combine();
 
-        Molecule molRef = new ProteinMolecule();
-        molRef.bond();
-        molRef.vibrate();
-        molRef.react();
-        molRef.absorbEnergy();
-        molRef.move();
+        Molecule moleculeRef = new ProteinMolecule();
+        moleculeRef.bond();
+        moleculeRef.vibrate();
+        moleculeRef.react();
+        moleculeRef.split();
+        moleculeRef.combine();
 
         ProteinMolecule protein = new ProteinMolecule();
         protein.bond();
         protein.vibrate();
         protein.react();
-        protein.absorbEnergy();
-        protein.move();
+        protein.split();
+        protein.combine();
+
+        MoleculeAnalyzer analyzer = new MoleculeAnalyzer();
+        analyzer.analyze(molecule);
+        analyzer.analyze(protein);
+        analyzer.analyze(moleculeRef);
         System.out.println("######################################################");
 
-        Antenna ant = new Antenna();
-        ant.transmitSignal();
-        ant.receiveSignal();
-        ant.adjustFrequency();
-        ant.amplifySignal();
-        ant.trackSource();
+        Antenna antenna = new Antenna();
+        antenna.transmit();
+        antenna.receive();
+        antenna.rotate();
+        antenna.align();
+        antenna.calibrate();
 
-        Antenna antRef = new ParabolicAntenna();
-        antRef.transmitSignal();
-        antRef.receiveSignal();
-        antRef.adjustFrequency();
-        antRef.amplifySignal();
-        antRef.trackSource();
+        Antenna antennaRef = new ParabolicAntenna();
+        antennaRef.transmit();
+        antennaRef.receive();
+        antennaRef.rotate();
+        antennaRef.align();
+        antennaRef.calibrate();
 
         ParabolicAntenna parabolic = new ParabolicAntenna();
-        parabolic.transmitSignal();
-        parabolic.receiveSignal();
-        parabolic.adjustFrequency();
-        parabolic.amplifySignal();
-        parabolic.trackSource();
+        parabolic.transmit();
+        parabolic.receive();
+        parabolic.rotate();
+        parabolic.align();
+        parabolic.calibrate();
+
+        AntennaTester testerrr = new AntennaTester();
+        testerrr.test(antenna);
+        testerrr.test(parabolic);
+        testerrr.test(antennaRef);
         System.out.println("######################################################");
 
-        Education edu = new Education();
-        edu.deliverContent();
-        edu.evaluateStudents();
-        edu.promoteSkills();
-        edu.provideCertification();
-        edu.encourageCuriosity();
+        Education education = new Education();
+        education.teach();
+        education.assess();
+        education.enroll();
+        education.conductClass();
+        education.evaluate();
 
-        Education eduRef = new OnlineEducation();
-        eduRef.deliverContent();
-        eduRef.evaluateStudents();
-        eduRef.promoteSkills();
-        eduRef.provideCertification();
-        eduRef.encourageCuriosity();
+        Education educationRef = new OnlineEducation();
+        educationRef.teach();
+        educationRef.assess();
+        educationRef.enroll();
+        educationRef.conductClass();
+        educationRef.evaluate();
 
         OnlineEducation online = new OnlineEducation();
-        online.deliverContent();
-        online.evaluateStudents();
-        online.promoteSkills();
-        online.provideCertification();
-        online.encourageCuriosity();
+        online.teach();
+        online.assess();
+        online.enroll();
+        online.conductClass();
+        online.evaluate();
+
+        EducationPlatform platform = new EducationPlatform();
+        platform.start(education);
+        platform.start(online);
+        platform.start(educationRef);
         System.out.println("######################################################");
 
-        Submarine sub = new Submarine();
-        sub.dive();
-        sub.surface();
-        sub.navigate();
-        sub.maintainPressure();
-        sub.communicate();
+        Submarine submarine = new Submarine();
+        submarine.dive();
+        submarine.surface();
+        submarine.navigate();
+        submarine.communicate();
+        submarine.maintainPressure();
 
-        Submarine subRef = new ResearchSubmarine();
-        subRef.dive();
-        subRef.surface();
-        subRef.navigate();
-        subRef.maintainPressure();
-        subRef.communicate();
+        Submarine submarineRef = new ResearchSubmarine();
+        submarineRef.dive();
+        submarineRef.surface();
+        submarineRef.navigate();
+        submarineRef.communicate();
+        submarineRef.maintainPressure();
 
         ResearchSubmarine research = new ResearchSubmarine();
         research.dive();
         research.surface();
         research.navigate();
-        research.maintainPressure();
         research.communicate();
+        research.maintainPressure();
+
+        SubmarineMission mission = new SubmarineMission();
+        mission.start(submarine);
+        mission.start(research);
+        mission.start(submarineRef);
         System.out.println("######################################################");
 
-        Investigation inv = new Investigation();
-        inv.gatherEvidence();
-        inv.interrogateWitnesses();
-        inv.analyzeData();
-        inv.identifySuspects();
-        inv.reportFindings();
+        Investigation investigation = new Investigation();
+        investigation.collectEvidence();
+        investigation.interviewWitnesses();
+        investigation.analyzeData();
+        investigation.followLeads();
+        investigation.writeReport();
 
-        Investigation invRef = new CrimeSceneInvestigation();
-        invRef.gatherEvidence();
-        invRef.interrogateWitnesses();
-        invRef.analyzeData();
-        invRef.identifySuspects();
-        invRef.reportFindings();
+        Investigation investigationRef = new CrimeSceneInvestigation();
+        investigationRef.collectEvidence();
+        investigationRef.interviewWitnesses();
+        investigationRef.analyzeData();
+        investigationRef.followLeads();
+        investigationRef.writeReport();
 
         CrimeSceneInvestigation csi = new CrimeSceneInvestigation();
-        csi.gatherEvidence();
-        csi.interrogateWitnesses();
+        csi.collectEvidence();
+        csi.interviewWitnesses();
         csi.analyzeData();
-        csi.identifySuspects();
-        csi.reportFindings();
+        csi.followLeads();
+        csi.writeReport();
+
+        InvestigationProcess process = new InvestigationProcess();
+        process.handle(investigation);
+        process.handle(csi);
+        process.handle(investigationRef);
         System.out.println("######################################################");
 
         Organism organism = new Organism();
         organism.grow();
         organism.reproduce();
+        organism.metabolize();
+        organism.move();
         organism.respondToStimuli();
-        organism.consumeEnergy();
-        organism.adapt();
 
         Organism organismRef = new MutantOrganism();
         organismRef.grow();
         organismRef.reproduce();
+        organismRef.metabolize();
+        organismRef.move();
         organismRef.respondToStimuli();
-        organismRef.consumeEnergy();
-        organismRef.adapt();
 
         MutantOrganism mutant = new MutantOrganism();
         mutant.grow();
         mutant.reproduce();
+        mutant.metabolize();
+        mutant.move();
         mutant.respondToStimuli();
-        mutant.consumeEnergy();
-        mutant.adapt();
+
+        GeneticAnalysis analysis = new GeneticAnalysis();
+        analysis.examine(organism);
+        analysis.examine(mutant);
+        analysis.examine(organismRef);
         System.out.println("######################################################");
 
         Astronaut astronaut = new Astronaut();
+        astronaut.train();
         astronaut.launch();
-        astronaut.performExperiment();
+        astronaut.conductExperiment();
         astronaut.spaceWalk();
-        astronaut.communicateWithBase();
-        astronaut.maintainLifeSupport();
+        astronaut.communicate();
 
         Astronaut astronautRef = new CommanderAstronaut();
+        astronautRef.train();
         astronautRef.launch();
-        astronautRef.performExperiment();
+        astronautRef.conductExperiment();
         astronautRef.spaceWalk();
-        astronautRef.communicateWithBase();
-        astronautRef.maintainLifeSupport();
+        astronautRef.communicate();
 
         CommanderAstronaut commander = new CommanderAstronaut();
+        commander.train();
         commander.launch();
-        commander.performExperiment();
+        commander.conductExperiment();
         commander.spaceWalk();
-        commander.communicateWithBase();
-        commander.maintainLifeSupport();
+        commander.communicate();
+
+        MissionControl missionn = new MissionControl();
+        missionn.executeMission(astronaut);
+        missionn.executeMission(commander);
+        missionn.executeMission(astronautRef);
         System.out.println("######################################################");
+
 
         Witch witch = new Witch();
         witch.castSpell();
+        witch.flyOnBroom();
         witch.brewPotion();
-        witch.rideBroom();
         witch.summonSpirits();
-        witch.readRunes();
+        witch.vanish();
 
         Witch witchRef = new TechnoWitch();
         witchRef.castSpell();
+        witchRef.flyOnBroom();
         witchRef.brewPotion();
-        witchRef.rideBroom();
         witchRef.summonSpirits();
-        witchRef.readRunes();
+        witchRef.vanish();
 
         TechnoWitch techno = new TechnoWitch();
         techno.castSpell();
+        techno.flyOnBroom();
         techno.brewPotion();
-        techno.rideBroom();
         techno.summonSpirits();
-        techno.readRunes();
+        techno.vanish();
+
+        SpellCaster spellCaster = new SpellCaster();
+        spellCaster.observe(witch);
+        spellCaster.observe(techno);
+        spellCaster.observe(witchRef);
         System.out.println("######################################################");
 
         Dream dream = new Dream();
-        dream.visualize();
-        dream.shiftScenes();
-        dream.feelEmotion();
-        dream.loseControl();
-        dream.fadeAway();
+        dream.start();
+        dream.shiftScene();
+        dream.feelReal();
+        dream.fade();
+        dream.end();
 
         Dream dreamRef = new LucidDream();
-        dreamRef.visualize();
-        dreamRef.shiftScenes();
-        dreamRef.feelEmotion();
-        dreamRef.loseControl();
-        dreamRef.fadeAway();
+        dreamRef.start();
+        dreamRef.shiftScene();
+        dreamRef.feelReal();
+        dreamRef.fade();
+        dreamRef.end();
 
         LucidDream lucid = new LucidDream();
-        lucid.visualize();
-        lucid.shiftScenes();
-        lucid.feelEmotion();
-        lucid.loseControl();
-        lucid.fadeAway();
+        lucid.start();
+        lucid.shiftScene();
+        lucid.feelReal();
+        lucid.fade();
+        lucid.end();
+
+        DreamExplorer explorer = new DreamExplorer();
+        explorer.explore(dream);
+        explorer.explore(lucid);
+        explorer.explore(dreamRef);
         System.out.println("######################################################");
 
         Library library = new Library();
         library.open();
-        library.lendBook();
+        library.issueBook();
         library.returnBook();
-        library.maintainSilence();
-        library.organizeShelves();
+        library.readBook();
+        library.close();
 
         Library libraryRef = new VirtualLibrary();
         libraryRef.open();
-        libraryRef.lendBook();
+        libraryRef.issueBook();
         libraryRef.returnBook();
-        libraryRef.maintainSilence();
-        libraryRef.organizeShelves();
+        libraryRef.readBook();
+        libraryRef.close();
 
-        VirtualLibrary virtual = new VirtualLibrary();
-        virtual.open();
-        virtual.lendBook();
-        virtual.returnBook();
-        virtual.maintainSilence();
-        virtual.organizeShelves();
+        VirtualLibrary vlib = new VirtualLibrary();
+        vlib.open();
+        vlib.issueBook();
+        vlib.returnBook();
+        vlib.readBook();
+        vlib.close();
+
+        LibraryManager mmanager = new LibraryManager();
+        mmanager.manage(library);
+        mmanager.manage(vlib);
+        mmanager.manage(libraryRef);
         System.out.println("######################################################");
 
         TimeTraveler traveler = new TimeTraveler();
         traveler.travelToPast();
         traveler.travelToFuture();
-        traveler.blendIn();
-        traveler.fixTimeline();
-        traveler.recordJourney();
+        traveler.observeHistory();
+        traveler.avoidParadox();
+        traveler.returnToPresent();
 
         TimeTraveler travelerRef = new QuantumTimeTraveler();
         travelerRef.travelToPast();
         travelerRef.travelToFuture();
-        travelerRef.blendIn();
-        travelerRef.fixTimeline();
-        travelerRef.recordJourney();
+        travelerRef.observeHistory();
+        travelerRef.avoidParadox();
+        travelerRef.returnToPresent();
 
-        QuantumTimeTraveler quan = new QuantumTimeTraveler();
-        quan.travelToFuture();
-        quan.travelToPast();
-        quan.blendIn();
-        quan.fixTimeline();
-        quan.recordJourney();
+        QuantumTimeTraveler qtt = new QuantumTimeTraveler();
+        qtt.travelToPast();
+        qtt.travelToFuture();
+        qtt.observeHistory();
+        qtt.avoidParadox();
+        qtt.returnToPresent();
+
+        TimeTravelMission mmission = new TimeTravelMission();
+        mmission.execute(traveler);
+        mmission.execute(qtt);
+        mmission.execute(travelerRef);
         System.out.println("######################################################");
 
         Emotion emotion = new Emotion();
-        emotion.express();
-        emotion.fluctuate();
-        emotion.influenceThoughts();
-        emotion.connectWithOthers();
-        emotion.fadeOverTime();
+        emotion.expressJoy();
+        emotion.expressSadness();
+        emotion.expressAnger();
+        emotion.expressFear();
+        emotion.expressSurprise();
 
         Emotion emotionRef = new SyntheticEmotion();
-        emotionRef.express();
-        emotionRef.fluctuate();
-        emotionRef.influenceThoughts();
-        emotionRef.connectWithOthers();
-        emotionRef.fadeOverTime();
+        emotionRef.expressJoy();
+        emotionRef.expressSadness();
+        emotionRef.expressAnger();
+        emotionRef.expressFear();
+        emotionRef.expressSurprise();
 
         SyntheticEmotion synthetic = new SyntheticEmotion();
-        synthetic.express();
-        synthetic.fluctuate();
-        synthetic.influenceThoughts();
-        synthetic.connectWithOthers();
-        synthetic.fadeOverTime();
+        synthetic.expressJoy();
+        synthetic.expressSadness();
+        synthetic.expressAnger();
+        synthetic.expressFear();
+        synthetic.expressSurprise();
+
+        EmotionProcessor processorr = new EmotionProcessor();
+        processorr.analyze(emotion);
+        processorr.analyze(synthetic);
+        processorr.analyze(emotionRef);
         System.out.println("######################################################");
+
 
         Paradox paradox = new Paradox();
         paradox.contradictItself();

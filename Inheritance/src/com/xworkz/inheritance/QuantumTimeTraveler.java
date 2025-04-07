@@ -7,26 +7,30 @@ public class QuantumTimeTraveler extends TimeTraveler {
 
     @Override
     public void travelToPast() {
-        System.out.println("QuantumTimeTraveler enters alternate past timelines");
+        System.out.println("QuantumTimeTraveler uses quantum tunnel to travel to the past");
     }
 
     @Override
     public void travelToFuture() {
-        System.out.println("QuantumTimeTraveler explores infinite futures");
+        System.out.println("QuantumTimeTraveler uses wormhole to jump into the future");
     }
 
     @Override
-    public void blendIn() {
-        System.out.println("QuantumTimeTraveler manipulates identity on the quantum level");
+    public void observeHistory() {
+        System.out.println("QuantumTimeTraveler records history without interference");
     }
 
     @Override
-    public void fixTimeline() {
-        System.out.println("QuantumTimeTraveler collapses unstable timelines");
+    public void avoidParadox() {
+        System.out.println("QuantumTimeTraveler uses timeline stabilizer to avoid paradox");
     }
 
     @Override
-    public void recordJourney() {
-        System.out.println("QuantumTimeTraveler encodes memories into quantum fields");
+    public void returnToPresent() {
+        System.out.println("QuantumTimeTraveler synchronizes with present timeline");
+    }
+
+    public void stabilizeTimeline() {
+        System.out.println("QuantumTimeTraveler is stabilizing the timeline");
     }
 }

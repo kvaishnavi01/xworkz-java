@@ -7,26 +7,30 @@ public class RainforestEcosystem extends Ecosystem {
 
     @Override
     public void supportLife() {
-        System.out.println("Rainforest supports dense biodiversity");
-    }
-
-    @Override
-    public void cycleNutrients() {
-        System.out.println("Rainforest cycles nutrients through rapid decay and growth");
-    }
-
-    @Override
-    public void maintainBalance() {
-        System.out.println("Rainforest maintains humid climate and food web");
+        System.out.println("Rainforest supports rich biodiversity");
     }
 
     @Override
     public void regulateClimate() {
-        System.out.println("Rainforest regulates rainfall and carbon levels");
+        System.out.println("Rainforest helps regulate tropical climate");
     }
 
     @Override
-    public void purifyAir() {
-        System.out.println("Rainforest purifies air through high photosynthesis");
+    public void cycleNutrients() {
+        System.out.println("Rainforest cycles nutrients rapidly");
+    }
+
+    @Override
+    public void maintainSoil() {
+        System.out.println("Rainforest maintains delicate soil balance");
+    }
+
+    @Override
+    public void purifyWater() {
+        System.out.println("Rainforest purifies rainwater");
+    }
+
+    public void produceOxygen() {
+        System.out.println("Rainforest produces large amounts of oxygen");
     }
 }

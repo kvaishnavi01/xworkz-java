@@ -5,23 +5,23 @@ public class Antenna {
         System.out.println("no args const of Antenna");
     }
 
-    public void transmitSignal() {
-        System.out.println("Antenna transmits electromagnetic signals");
+    public void transmit() {
+        System.out.println("Antenna transmits signals");
     }
 
-    public void receiveSignal() {
-        System.out.println("Antenna receives incoming signals");
+    public void receive() {
+        System.out.println("Antenna receives signals");
     }
 
-    public void adjustFrequency() {
-        System.out.println("Antenna adjusts its frequency range");
+    public void rotate() {
+        System.out.println("Antenna rotates for better reception");
     }
 
-    public void amplifySignal() {
-        System.out.println("Antenna amplifies weak signals");
+    public void align() {
+        System.out.println("Antenna is being aligned");
     }
 
-    public void trackSource() {
-        System.out.println("Antenna tracks the signal source direction");
+    public void calibrate() {
+        System.out.println("Antenna is being calibrated");
     }
 }

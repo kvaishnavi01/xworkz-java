@@ -29,4 +29,8 @@ public class LinuxOS extends OperatingSystem {
     public void displayInfo() {
         System.out.println("Linux OS: Ubuntu 22.04 LTS");
     }
+
+    public void start(){
+        System.out.println("linux starts");
+    }
 }

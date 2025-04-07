@@ -6,27 +6,31 @@ public class ParabolicAntenna extends Antenna {
     }
 
     @Override
-    public void transmitSignal() {
-        System.out.println("Parabolic antenna transmits highly directional beams");
+    public void transmit() {
+        System.out.println("Parabolic antenna transmits focused signals");
     }
 
     @Override
-    public void receiveSignal() {
-        System.out.println("Parabolic antenna receives focused long-distance signals");
+    public void receive() {
+        System.out.println("Parabolic antenna receives directional signals");
     }
 
     @Override
-    public void adjustFrequency() {
-        System.out.println("Parabolic antenna supports wideband frequency adjustments");
+    public void rotate() {
+        System.out.println("Parabolic antenna rotates precisely");
     }
 
     @Override
-    public void amplifySignal() {
-        System.out.println("Parabolic antenna boosts gain with dish shape");
+    public void align() {
+        System.out.println("Parabolic antenna is aligned using motors");
     }
 
     @Override
-    public void trackSource() {
-        System.out.println("Parabolic antenna aligns precisely with satellite paths");
+    public void calibrate() {
+        System.out.println("Parabolic antenna is calibrated for maximum gain");
+    }
+
+    public void focusSignal() {
+        System.out.println("Parabolic antenna focuses the signal to a point");
     }
 }

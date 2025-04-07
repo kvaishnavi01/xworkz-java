@@ -5,23 +5,23 @@ public class Structure {
         System.out.println("no args const of Structure");
     }
 
-    public void provideSupport() {
-        System.out.println("Structure provides physical support");
+    public void build() {
+        System.out.println("Structure is being built");
     }
 
-    public void withstandLoad() {
-        System.out.println("Structure withstands external load");
+    public void supportWeight() {
+        System.out.println("Structure supports weight");
     }
 
-    public void occupySpace() {
-        System.out.println("Structure occupies defined space");
+    public void withstandWeather() {
+        System.out.println("Structure withstands weather conditions");
     }
 
-    public void endureWeather() {
-        System.out.println("Structure endures weather conditions");
+    public void provideShelter() {
+        System.out.println("Structure provides shelter");
     }
 
-    public void defineShape() {
-        System.out.println("Structure defines the shape of a construction");
+    public void maintain() {
+        System.out.println("Structure is maintained regularly");
     }
 }

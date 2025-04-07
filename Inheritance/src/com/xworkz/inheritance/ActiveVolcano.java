@@ -29,4 +29,8 @@ public class ActiveVolcano extends Volcano {
     public void formCrater() {
         System.out.println("Active volcano has formed a wide crater");
     }
+
+    public void temp(){
+        System.out.println("temp rising");
+    }
 }

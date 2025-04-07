@@ -5,23 +5,23 @@ public class Photographer {
         System.out.println("no args const of Photographer");
     }
 
-    public void capturePhoto() {
-        System.out.println("Photographer is capturing a photo");
+    public void takePhoto() {
+        System.out.println("Photographer takes a photo");
     }
 
     public void editPhoto() {
-        System.out.println("Photographer is editing the photo");
+        System.out.println("Photographer edits the photo");
     }
 
-    public void printPhoto() {
-        System.out.println("Photographer is printing the photo");
+    public void setupEquipment() {
+        System.out.println("Photographer sets up the equipment");
     }
 
-    public void uploadPhoto() {
-        System.out.println("Photographer is uploading photo online");
+    public void selectLocation() {
+        System.out.println("Photographer selects a location");
     }
 
-    public void organizeAlbum() {
-        System.out.println("Photographer is organizing the album");
+    public void processImages() {
+        System.out.println("Photographer processes the images");
     }
 }

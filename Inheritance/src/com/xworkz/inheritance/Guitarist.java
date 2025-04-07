@@ -29,4 +29,8 @@ public class Guitarist extends Musician {
     public void tuneInstrument() {
         System.out.println("Guitarist is tuning the guitar");
     }
+
+    public void Play(){
+        System.out.println("guitar playing");
+    }
 }

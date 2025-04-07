@@ -6,22 +6,22 @@ public class Ecosystem {
     }
 
     public void supportLife() {
-        System.out.println("Ecosystem supports various forms of life");
-    }
-
-    public void cycleNutrients() {
-        System.out.println("Ecosystem cycles nutrients between organisms");
-    }
-
-    public void maintainBalance() {
-        System.out.println("Ecosystem maintains environmental balance");
+        System.out.println("Ecosystem supports various life forms");
     }
 
     public void regulateClimate() {
-        System.out.println("Ecosystem helps regulate the climate");
+        System.out.println("Ecosystem helps regulate climate");
     }
 
-    public void purifyAir() {
-        System.out.println("Ecosystem purifies air naturally");
+    public void cycleNutrients() {
+        System.out.println("Ecosystem cycles nutrients");
+    }
+
+    public void maintainSoil() {
+        System.out.println("Ecosystem maintains soil fertility");
+    }
+
+    public void purifyWater() {
+        System.out.println("Ecosystem purifies water");
     }
 }

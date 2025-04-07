@@ -29,4 +29,8 @@ public class Runner extends Athlete {
     public void hydrate() {
         System.out.println("Runner is drinking electrolyte water");
     }
+
+    public void run(){
+        System.out.println("runner runs");
+    }
 }

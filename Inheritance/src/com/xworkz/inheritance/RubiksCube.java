@@ -29,4 +29,8 @@ public class RubiksCube extends Puzzle {
     public void checkCompletion() {
         System.out.println("Checking if all cube faces have the same color");
     }
+
+    public void fix(){
+        System.out.println("fixing");
+    }
 }

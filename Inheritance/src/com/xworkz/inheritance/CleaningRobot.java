@@ -29,4 +29,8 @@ public class CleaningRobot extends Robot {
     public void processTask() {
         System.out.println("Cleaning Robot is cleaning the floor");
     }
+
+    public void cleans(){
+        System.out.println("Robot cleans");
+    }
 }

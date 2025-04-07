@@ -29,4 +29,8 @@ public class Airplane extends Transport {
     public void unload() {
         System.out.println("Airplane is deboarding passengers");
     }
+
+    public void checkin(){
+        System.out.println("checking in");
+    }
 }

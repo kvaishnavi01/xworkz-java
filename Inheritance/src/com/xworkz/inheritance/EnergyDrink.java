@@ -29,4 +29,8 @@ public class EnergyDrink extends Beverage {
     public void shake() {
         System.out.println("Energy drink is lightly shaken before use");
     }
+
+    public void sip(){
+        System.out.println("drinking");
+    }
 }

@@ -7,26 +7,30 @@ public class IceSculpture extends Sculpture {
 
     @Override
     public void carve() {
-        System.out.println("Ice sculpture is carved with precision tools");
+        System.out.println("Ice sculpture is being carved with precision tools");
     }
 
     @Override
     public void polish() {
-        System.out.println("Ice sculpture is polished using warm air");
-    }
-
-    @Override
-    public void transport() {
-        System.out.println("Ice sculpture is transported in a cold truck");
+        System.out.println("Ice sculpture is being polished to shine");
     }
 
     @Override
     public void display() {
-        System.out.println("Ice sculpture is displayed at an ice festival");
+        System.out.println("Ice sculpture is displayed in a cold room");
     }
 
     @Override
-    public void maintain() {
-        System.out.println("Ice sculpture is maintained with cooling systems");
+    public void transport() {
+        System.out.println("Ice sculpture is transported in a refrigerated vehicle");
+    }
+
+    @Override
+    public void restore() {
+        System.out.println("Ice sculpture cannot be restored once melted");
+    }
+
+    public void meltTime() {
+        System.out.println("Ice sculpture will melt in a few hours");
     }
 }

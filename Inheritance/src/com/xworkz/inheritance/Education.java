@@ -5,23 +5,23 @@ public class Education {
         System.out.println("no args const of Education");
     }
 
-    public void deliverContent() {
-        System.out.println("Education delivers knowledge to learners");
+    public void teach() {
+        System.out.println("Education provides teaching");
     }
 
-    public void evaluateStudents() {
-        System.out.println("Education evaluates student understanding");
+    public void assess() {
+        System.out.println("Education involves assessments");
     }
 
-    public void promoteSkills() {
-        System.out.println("Education promotes skill development");
+    public void enroll() {
+        System.out.println("Students enroll for education");
     }
 
-    public void provideCertification() {
-        System.out.println("Education provides certifications upon completion");
+    public void conductClass() {
+        System.out.println("Classes are conducted in education");
     }
 
-    public void encourageCuriosity() {
-        System.out.println("Education encourages lifelong learning and curiosity");
+    public void evaluate() {
+        System.out.println("Education evaluates student performance");
     }
 }

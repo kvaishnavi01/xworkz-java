@@ -6,27 +6,31 @@ public class Cryptocurrency extends Currency {
     }
 
     @Override
+    public void use() {
+        System.out.println("Cryptocurrency is used for digital transactions");
+    }
+
+    @Override
     public void exchange() {
-        System.out.println("Cryptocurrency is exchanged digitally over blockchain");
+        System.out.println("Cryptocurrency can be exchanged on crypto exchanges");
     }
 
     @Override
     public void storeValue() {
-        System.out.println("Cryptocurrency value stored in digital wallets");
+        System.out.println("Cryptocurrency is stored in digital wallets");
     }
 
     @Override
-    public void actAsMedium() {
-        System.out.println("Cryptocurrency used for peer-to-peer transactions");
+    public void measureValue() {
+        System.out.println("Cryptocurrency value is measured by market demand");
     }
 
     @Override
-    public void provideUnit() {
-        System.out.println("Cryptocurrency provides tokens as units");
+    public void legalStatus() {
+        System.out.println("Cryptocurrency legality varies by country");
     }
 
-    @Override
-    public void recognizeLegally() {
-        System.out.println("Cryptocurrency legal status varies by country");
+    public void mine() {
+        System.out.println("Cryptocurrency is mined using computational power");
     }
 }

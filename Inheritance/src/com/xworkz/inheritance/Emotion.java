@@ -5,23 +5,23 @@ public class Emotion {
         System.out.println("no args const of Emotion");
     }
 
-    public void express() {
-        System.out.println("Emotion is expressed naturally");
+    public void expressJoy() {
+        System.out.println("Emotion expresses joy");
     }
 
-    public void fluctuate() {
-        System.out.println("Emotion fluctuates with time and situation");
+    public void expressSadness() {
+        System.out.println("Emotion expresses sadness");
     }
 
-    public void influenceThoughts() {
-        System.out.println("Emotion influences human thinking");
+    public void expressAnger() {
+        System.out.println("Emotion expresses anger");
     }
 
-    public void connectWithOthers() {
-        System.out.println("Emotion creates connection with others");
+    public void expressFear() {
+        System.out.println("Emotion expresses fear");
     }
 
-    public void fadeOverTime() {
-        System.out.println("Emotion fades as time passes");
+    public void expressSurprise() {
+        System.out.println("Emotion expresses surprise");
     }
 }

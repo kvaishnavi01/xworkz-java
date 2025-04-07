@@ -6,22 +6,22 @@ public class Library {
     }
 
     public void open() {
-        System.out.println("Library is now open to the public");
+        System.out.println("Library is opening");
     }
 
-    public void lendBook() {
-        System.out.println("Library lends out physical books");
+    public void issueBook() {
+        System.out.println("Book is being issued from the library");
     }
 
     public void returnBook() {
-        System.out.println("Library accepts returned books");
+        System.out.println("Book is being returned to the library");
     }
 
-    public void maintainSilence() {
-        System.out.println("Library maintains a quiet environment");
+    public void readBook() {
+        System.out.println("Reading book in the library");
     }
 
-    public void organizeShelves() {
-        System.out.println("Library staff organizes physical bookshelves");
+    public void close() {
+        System.out.println("Library is closing");
     }
 }

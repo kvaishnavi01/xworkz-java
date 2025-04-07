@@ -29,4 +29,8 @@ public class Cricketer extends Player {
     public void followDiet() {
         System.out.println("Cricketer is maintaining a high-protein diet");
     }
+
+    public void hit(){
+        System.out.println("hitting");
+    }
 }

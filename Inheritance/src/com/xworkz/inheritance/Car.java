@@ -29,4 +29,8 @@ public class Car extends Vehicle {
     public void honk() {
         System.out.println("Car honks softly");
     }
+
+    public void ride(){
+        System.out.println("car rides");
+    }
 }

@@ -6,22 +6,22 @@ public class Encryption {
     }
 
     public void encrypt() {
-        System.out.println("Encrypting data using base algorithm");
+        System.out.println("Encryption is being performed");
     }
 
     public void decrypt() {
-        System.out.println("Decrypting data using base algorithm");
+        System.out.println("Decryption is being performed");
     }
 
-    public void useKey() {
-        System.out.println("Using a key for encryption/decryption");
+    public void generateKey() {
+        System.out.println("Encryption key is generated");
     }
 
-    public void protectData() {
-        System.out.println("Encryption protects sensitive data");
+    public void validateData() {
+        System.out.println("Validating the data before encryption");
     }
 
-    public void verifyIntegrity() {
-        System.out.println("Verifying data integrity post decryption");
+    public void terminateSession() {
+        System.out.println("Encryption session is terminated");
     }
 }

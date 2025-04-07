@@ -6,27 +6,31 @@ public class WildlifePhotographer extends Photographer {
     }
 
     @Override
-    public void capturePhoto() {
-        System.out.println("Wildlife photographer captures animals in the wild");
+    public void takePhoto() {
+        System.out.println("WildlifePhotographer captures animals in nature");
     }
 
     @Override
     public void editPhoto() {
-        System.out.println("Wildlife photographer enhances nature tones");
+        System.out.println("WildlifePhotographer enhances wildlife shots");
     }
 
     @Override
-    public void printPhoto() {
-        System.out.println("Wildlife photographer prints large nature frames");
+    public void setupEquipment() {
+        System.out.println("WildlifePhotographer sets up long-range cameras");
     }
 
     @Override
-    public void uploadPhoto() {
-        System.out.println("Wildlife photographer uploads photos to NatGeo");
+    public void selectLocation() {
+        System.out.println("WildlifePhotographer picks wildlife reserves");
     }
 
     @Override
-    public void organizeAlbum() {
-        System.out.println("Wildlife photographer organizes animal categories");
+    public void processImages() {
+        System.out.println("WildlifePhotographer processes raw wildlife images");
+    }
+
+    public void camouflage() {
+        System.out.println("WildlifePhotographer uses camouflage to stay hidden");
     }
 }

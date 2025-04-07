@@ -29,4 +29,8 @@ public class MangoTree extends Tree {
     public void releaseOxygen() {
         System.out.println("Mango tree releases fresh oxygen");
     }
+
+    public void pluck(){
+        System.out.println("Mango plucked");
+    }
 }

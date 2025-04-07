@@ -6,27 +6,31 @@ public class CrimeSceneInvestigation extends Investigation {
     }
 
     @Override
-    public void gatherEvidence() {
-        System.out.println("CSI collects fingerprints and DNA samples");
+    public void collectEvidence() {
+        System.out.println("CrimeSceneInvestigation collects forensic evidence");
     }
 
     @Override
-    public void interrogateWitnesses() {
-        System.out.println("CSI interviews eyewitnesses and neighbors");
+    public void interviewWitnesses() {
+        System.out.println("CrimeSceneInvestigation interviews people at the crime scene");
     }
 
     @Override
     public void analyzeData() {
-        System.out.println("CSI analyzes forensic samples in the lab");
+        System.out.println("CrimeSceneInvestigation analyzes crime patterns and DNA");
     }
 
     @Override
-    public void identifySuspects() {
-        System.out.println("CSI matches clues with criminal records");
+    public void followLeads() {
+        System.out.println("CrimeSceneInvestigation follows up on criminal leads");
     }
 
     @Override
-    public void reportFindings() {
-        System.out.println("CSI prepares detailed case reports for prosecution");
+    public void writeReport() {
+        System.out.println("CrimeSceneInvestigation prepares detailed crime reports");
+    }
+
+    public void securePerimeter() {
+        System.out.println("CrimeSceneInvestigation secures the crime scene perimeter");
     }
 }

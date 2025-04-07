@@ -6,27 +6,31 @@ public class CommanderAstronaut extends Astronaut {
     }
 
     @Override
-    public void launch() {
-        System.out.println("Commander initiates launch sequence");
+    public void train() {
+        System.out.println("CommanderAstronaut is leading training sessions");
     }
 
     @Override
-    public void performExperiment() {
-        System.out.println("Commander oversees all onboard experiments");
+    public void launch() {
+        System.out.println("CommanderAstronaut initiates the launch");
+    }
+
+    @Override
+    public void conductExperiment() {
+        System.out.println("CommanderAstronaut supervises scientific experiments");
     }
 
     @Override
     public void spaceWalk() {
-        System.out.println("Commander leads the spacewalk operations");
+        System.out.println("CommanderAstronaut manages spacewalk activities");
     }
 
     @Override
-    public void communicateWithBase() {
-        System.out.println("Commander handles high-priority transmissions");
+    public void communicate() {
+        System.out.println("CommanderAstronaut handles critical communications");
     }
 
-    @Override
-    public void maintainLifeSupport() {
-        System.out.println("Commander performs critical life support diagnostics");
+    public void commandCrew() {
+        System.out.println("CommanderAstronaut is commanding the space crew");
     }
 }

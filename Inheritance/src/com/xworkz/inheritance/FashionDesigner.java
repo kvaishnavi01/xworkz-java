@@ -29,4 +29,8 @@ public class FashionDesigner extends Designer {
     public void finalizeDesign() {
         System.out.println("Fashion Designer is finalizing runway look");
     }
+
+    public void stitch(){
+        System.out.println("stitching");
+    }
 }

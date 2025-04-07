@@ -5,20 +5,20 @@ public class Potion {
         System.out.println("no args const of Potion");
     }
 
-    public void mixIngredients() {
+    public void mix() {
         System.out.println("Potion ingredients are being mixed");
     }
 
-    public void boil() {
-        System.out.println("Potion is being boiled");
-    }
-
     public void bottle() {
-        System.out.println("Potion is poured into a bottle");
+        System.out.println("Potion is being bottled");
     }
 
     public void label() {
-        System.out.println("Potion bottle is being labeled");
+        System.out.println("Potion is being labeled");
+    }
+
+    public void store() {
+        System.out.println("Potion is being stored safely");
     }
 
     public void test() {

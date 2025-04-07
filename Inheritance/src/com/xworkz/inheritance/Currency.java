@@ -5,23 +5,23 @@ public class Currency {
         System.out.println("no args const of Currency");
     }
 
+    public void use() {
+        System.out.println("Currency is used for transactions");
+    }
+
     public void exchange() {
-        System.out.println("Currency is being exchanged");
+        System.out.println("Currency can be exchanged for goods");
     }
 
     public void storeValue() {
-        System.out.println("Currency stores value");
+        System.out.println("Currency stores value over time");
     }
 
-    public void actAsMedium() {
-        System.out.println("Currency acts as a medium of exchange");
+    public void measureValue() {
+        System.out.println("Currency measures value of goods");
     }
 
-    public void provideUnit() {
-        System.out.println("Currency provides a unit of account");
-    }
-
-    public void recognizeLegally() {
-        System.out.println("Currency is recognized legally");
+    public void legalStatus() {
+        System.out.println("Currency is recognized by governments");
     }
 }

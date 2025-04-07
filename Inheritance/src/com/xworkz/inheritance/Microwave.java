@@ -29,4 +29,8 @@ public class Microwave extends Appliance {
     public void displayStatus() {
         System.out.println("Microwave displays cooking time left");
     }
+
+    public void heat(){
+        System.out.println("heating");
+    }
 }

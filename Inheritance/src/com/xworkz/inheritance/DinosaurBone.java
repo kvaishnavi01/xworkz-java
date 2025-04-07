@@ -29,4 +29,8 @@ public class DinosaurBone extends Fossil {
     public void catalog() {
         System.out.println("Dinosaur bone is tagged with a unique specimen ID");
     }
+
+    public void reserve(){
+        System.out.println("reserving");
+    }
 }

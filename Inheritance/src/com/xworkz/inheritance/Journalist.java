@@ -5,23 +5,23 @@ public class Journalist {
         System.out.println("no args const of Journalist");
     }
 
-    public void research() {
-        System.out.println("Journalist is doing research");
-    }
-
     public void writeArticle() {
-        System.out.println("Journalist is writing an article");
+        System.out.println("Journalist writes a general news article");
     }
 
-    public void interviewPeople() {
-        System.out.println("Journalist is interviewing people");
+    public void attendPressMeet() {
+        System.out.println("Journalist attends press meetings");
     }
 
-    public void attendConference() {
-        System.out.println("Journalist is attending a press conference");
+    public void interview() {
+        System.out.println("Journalist conducts interviews");
     }
 
-    public void publish() {
-        System.out.println("Journalist is publishing the news");
+    public void publishNews() {
+        System.out.println("Journalist publishes daily news");
+    }
+
+    public void travel() {
+        System.out.println("Journalist travels to cover stories");
     }
 }

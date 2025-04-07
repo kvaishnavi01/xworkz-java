@@ -5,23 +5,23 @@ public class Treasure {
         System.out.println("no args const of Treasure");
     }
 
-    public void discover() {
-        System.out.println("Treasure is being discovered");
+    public void hide() {
+        System.out.println("Treasure is hidden underground");
     }
 
-    public void unlock() {
-        System.out.println("Treasure is being unlocked");
+    public void guard() {
+        System.out.println("Treasure is guarded by traps");
     }
 
-    public void evaluate() {
-        System.out.println("Treasure is being evaluated");
+    public void shine() {
+        System.out.println("Treasure shines with gold and jewels");
     }
 
-    public void preserve() {
-        System.out.println("Treasure is being preserved");
+    public void attractSeekers() {
+        System.out.println("Treasure attracts adventurers and explorers");
     }
 
-    public void display() {
-        System.out.println("Treasure is displayed in a museum");
+    public void holdValue() {
+        System.out.println("Treasure holds immense value");
     }
 }

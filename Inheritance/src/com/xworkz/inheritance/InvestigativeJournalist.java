@@ -6,27 +6,31 @@ public class InvestigativeJournalist extends Journalist {
     }
 
     @Override
-    public void research() {
-        System.out.println("Investigative journalist is researching hidden facts");
-    }
-
-    @Override
     public void writeArticle() {
-        System.out.println("Investigative journalist is writing a deep expose");
+        System.out.println("Investigative Journalist writes in-depth investigative reports");
     }
 
     @Override
-    public void interviewPeople() {
-        System.out.println("Investigative journalist is interviewing key witnesses");
+    public void attendPressMeet() {
+        System.out.println("Investigative Journalist rarely attends press meets");
     }
 
     @Override
-    public void attendConference() {
-        System.out.println("Investigative journalist is attending secret briefings");
+    public void interview() {
+        System.out.println("Investigative Journalist conducts secretive interviews");
     }
 
     @Override
-    public void publish() {
-        System.out.println("Investigative journalist publishes on global platforms");
+    public void publishNews() {
+        System.out.println("Investigative Journalist publishes sensitive findings");
+    }
+
+    @Override
+    public void travel() {
+        System.out.println("Investigative Journalist travels undercover");
+    }
+
+    public void revealScandal() {
+        System.out.println("Investigative Journalist reveals a major scandal");
     }
 }

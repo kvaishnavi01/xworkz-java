@@ -29,4 +29,8 @@ public class WeatherSatellite extends Satellite {
     public void monitorSystems() {
         System.out.println("Weather Satellite is checking thermal sensors");
     }
+
+    public void check(){
+        System.out.println("checking");
+    }
 }

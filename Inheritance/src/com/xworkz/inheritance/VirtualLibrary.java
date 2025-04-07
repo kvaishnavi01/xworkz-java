@@ -7,26 +7,30 @@ public class VirtualLibrary extends Library {
 
     @Override
     public void open() {
-        System.out.println("VirtualLibrary goes live for global access");
+        System.out.println("Virtual Library is opening online");
     }
 
     @Override
-    public void lendBook() {
-        System.out.println("VirtualLibrary allows digital book downloads");
+    public void issueBook() {
+        System.out.println("E-book is being issued online");
     }
 
     @Override
     public void returnBook() {
-        System.out.println("VirtualLibrary logs return of eBooks automatically");
+        System.out.println("E-book is being returned through portal");
     }
 
     @Override
-    public void maintainSilence() {
-        System.out.println("VirtualLibrary uses noise-canceling algorithms");
+    public void readBook() {
+        System.out.println("Reading digital book in Virtual Library");
     }
 
     @Override
-    public void organizeShelves() {
-        System.out.println("VirtualLibrary uses AI to categorize digital content");
+    public void close() {
+        System.out.println("Virtual Library session is ending");
+    }
+
+    public void downloadEbook() {
+        System.out.println("Downloading ebook from Virtual Library");
     }
 }

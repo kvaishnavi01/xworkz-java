@@ -7,26 +7,30 @@ public class AesEncryption extends Encryption {
 
     @Override
     public void encrypt() {
-        System.out.println("Encrypting data using AES algorithm");
+        System.out.println("Data is encrypted using AES algorithm");
     }
 
     @Override
     public void decrypt() {
-        System.out.println("Decrypting data using AES algorithm");
+        System.out.println("Data is decrypted using AES algorithm");
     }
 
     @Override
-    public void useKey() {
-        System.out.println("Using 128/192/256-bit symmetric key");
+    public void generateKey() {
+        System.out.println("AES key is generated securely");
     }
 
     @Override
-    public void protectData() {
-        System.out.println("AES encryption ensures data confidentiality");
+    public void validateData() {
+        System.out.println("Data validated for AES encryption");
     }
 
     @Override
-    public void verifyIntegrity() {
-        System.out.println("AES includes integrity checks with CBC or GCM modes");
+    public void terminateSession() {
+        System.out.println("AES encryption session ended");
+    }
+
+    public void setEncryptionMode() {
+        System.out.println("AES encryption mode set to CBC");
     }
 }

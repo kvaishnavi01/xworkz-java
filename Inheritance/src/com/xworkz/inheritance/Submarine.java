@@ -6,22 +6,22 @@ public class Submarine {
     }
 
     public void dive() {
-        System.out.println("Submarine dives deep underwater");
+        System.out.println("Submarine dives underwater");
     }
 
     public void surface() {
-        System.out.println("Submarine returns to the surface");
+        System.out.println("Submarine surfaces to the top");
     }
 
     public void navigate() {
-        System.out.println("Submarine navigates using sonar");
+        System.out.println("Submarine navigates through water");
+    }
+
+    public void communicate() {
+        System.out.println("Submarine uses sonar to communicate");
     }
 
     public void maintainPressure() {
         System.out.println("Submarine maintains internal pressure");
-    }
-
-    public void communicate() {
-        System.out.println("Submarine communicates with the base");
     }
 }

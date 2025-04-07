@@ -24,4 +24,8 @@ class Dog extends Animal {
     public void breathe() {
         System.out.println("Dog breathes");
     }
+
+    public void bark(){
+        System.out.println("dog barks");
+    }
 }

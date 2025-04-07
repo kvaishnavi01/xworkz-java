@@ -5,23 +5,23 @@ public class Dream {
         System.out.println("no args const of Dream");
     }
 
-    public void visualize() {
-        System.out.println("Dream shows abstract visuals");
+    public void start() {
+        System.out.println("Dream is starting");
     }
 
-    public void shiftScenes() {
-        System.out.println("Dream changes scenes randomly");
+    public void shiftScene() {
+        System.out.println("Dream is shifting scenes");
     }
 
-    public void feelEmotion() {
-        System.out.println("Dream triggers emotional responses");
+    public void feelReal() {
+        System.out.println("Dream feels real");
     }
 
-    public void loseControl() {
-        System.out.println("Dream proceeds without control");
+    public void fade() {
+        System.out.println("Dream is fading away");
     }
 
-    public void fadeAway() {
-        System.out.println("Dream fades from memory upon waking");
+    public void end() {
+        System.out.println("Dream has ended");
     }
 }

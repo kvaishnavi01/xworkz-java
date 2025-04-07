@@ -2,31 +2,35 @@ package com.xworkz.inheritance;
 
 public class StandUpComedian extends Comedian {
     public StandUpComedian() {
-        System.out.println("no args const of StandUpComedian");
+        System.out.println("no args const of StandupComedian");
     }
 
     @Override
-    public void writeJokes() {
-        System.out.println("Stand-up comedian writes jokes about daily life");
+    public void tellJoke() {
+        System.out.println("StandupComedian tells relatable jokes");
     }
 
     @Override
-    public void rehearse() {
-        System.out.println("Stand-up comedian rehearses in front of a mirror");
+    public void mimic() {
+        System.out.println("StandupComedian mimics politicians");
     }
 
     @Override
-    public void perform() {
-        System.out.println("Stand-up comedian performs at comedy clubs");
+    public void improvise() {
+        System.out.println("StandupComedian improvises with audience input");
     }
 
     @Override
-    public void interactWithAudience() {
-        System.out.println("Stand-up comedian roasts and chats with audience");
+    public void writeScript() {
+        System.out.println("StandupComedian writes stand-up material");
     }
 
     @Override
-    public void uploadVideo() {
-        System.out.println("Stand-up comedian uploads video to YouTube");
+    public void entertain() {
+        System.out.println("StandupComedian keeps the crowd laughing");
+    }
+
+    public void performSet() {
+        System.out.println("StandupComedian performs a 30-minute set");
     }
 }

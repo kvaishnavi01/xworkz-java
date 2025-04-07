@@ -29,4 +29,8 @@ public class Manager extends Employee {
     public void logout() {
         System.out.println("Manager is logging out after team updates");
     }
+
+    public void scolds(){
+        System.out.println("scolds ");
+    }
 }

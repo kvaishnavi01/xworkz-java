@@ -29,4 +29,8 @@ public class Rose extends Flower {
     public void wilt() {
         System.out.println("Rose is wilting slowly");
     }
+
+    public void smells(){
+        System.out.println("rose smells");
+    }
 }

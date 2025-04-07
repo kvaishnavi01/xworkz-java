@@ -5,16 +5,12 @@ public class Scientist {
         System.out.println("no args const of Scientist");
     }
 
-    public void conductResearch() {
+    public void research() {
         System.out.println("Scientist is conducting research");
     }
 
-    public void writePapers() {
-        System.out.println("Scientist is writing research papers");
-    }
-
-    public void attendSeminars() {
-        System.out.println("Scientist is attending international seminars");
+    public void publish() {
+        System.out.println("Scientist is publishing papers");
     }
 
     public void experiment() {
@@ -22,6 +18,10 @@ public class Scientist {
     }
 
     public void collaborate() {
-        System.out.println("Scientist is collaborating with other institutions");
+        System.out.println("Scientist is collaborating with others");
+    }
+
+    public void attendConference() {
+        System.out.println("Scientist is attending a conference");
     }
 }

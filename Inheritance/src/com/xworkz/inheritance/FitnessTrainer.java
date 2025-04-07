@@ -6,27 +6,31 @@ public class FitnessTrainer extends Trainer {
     }
 
     @Override
-    public void planSchedule() {
-        System.out.println("Fitness trainer creates a custom gym plan");
+    public void giveInstructions() {
+        System.out.println("Fitness Trainer gives workout instructions");
     }
 
     @Override
-    public void conductSession() {
-        System.out.println("Fitness trainer is leading a HIIT session");
+    public void scheduleSessions() {
+        System.out.println("Fitness Trainer schedules gym workouts");
     }
 
     @Override
-    public void motivateClient() {
-        System.out.println("Fitness trainer is pushing the client to do more reps");
+    public void motivate() {
+        System.out.println("Fitness Trainer pushes clients to reach goals");
     }
 
     @Override
-    public void trackProgress() {
-        System.out.println("Fitness trainer is tracking body measurements");
+    public void monitorProgress() {
+        System.out.println("Fitness Trainer tracks weight and strength changes");
     }
 
     @Override
     public void giveFeedback() {
-        System.out.println("Fitness trainer is correcting posture and form");
+        System.out.println("Fitness Trainer advises on diet and improvements");
+    }
+
+    public void demonstrateExercise() {
+        System.out.println("Fitness Trainer demonstrates exercises");
     }
 }

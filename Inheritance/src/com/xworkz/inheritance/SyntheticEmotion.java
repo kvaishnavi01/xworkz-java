@@ -6,27 +6,31 @@ public class SyntheticEmotion extends Emotion {
     }
 
     @Override
-    public void express() {
-        System.out.println("SyntheticEmotion mimics emotional expressions");
+    public void expressJoy() {
+        System.out.println("SyntheticEmotion simulates joy using AI");
     }
 
     @Override
-    public void fluctuate() {
-        System.out.println("SyntheticEmotion adjusts based on programmed parameters");
+    public void expressSadness() {
+        System.out.println("SyntheticEmotion simulates sadness with neural feedback");
     }
 
     @Override
-    public void influenceThoughts() {
-        System.out.println("SyntheticEmotion triggers logic-based behavioral patterns");
+    public void expressAnger() {
+        System.out.println("SyntheticEmotion mimics anger using data analysis");
     }
 
     @Override
-    public void connectWithOthers() {
-        System.out.println("SyntheticEmotion creates calculated bonding with users");
+    public void expressFear() {
+        System.out.println("SyntheticEmotion replicates fear from environment input");
     }
 
     @Override
-    public void fadeOverTime() {
-        System.out.println("SyntheticEmotion resets after evaluation cycle");
+    public void expressSurprise() {
+        System.out.println("SyntheticEmotion generates surprise through logic triggers");
+    }
+
+    public void calibrateEmotionModel() {
+        System.out.println("SyntheticEmotion calibrates emotional response algorithm");
     }
 }

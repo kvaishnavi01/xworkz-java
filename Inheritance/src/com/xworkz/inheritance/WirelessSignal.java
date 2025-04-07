@@ -7,26 +7,30 @@ public class WirelessSignal extends Signal {
 
     @Override
     public void transmit() {
-        System.out.println("Wireless signal is transmitted via radio waves");
+        System.out.println("Wireless signal is transmitting wirelessly");
     }
 
     @Override
     public void receive() {
-        System.out.println("Wireless signal is received by antenna");
+        System.out.println("Wireless signal is being received via antenna");
     }
 
     @Override
-    public void amplify() {
-        System.out.println("Wireless signal is boosted through a repeater");
+    public void encode() {
+        System.out.println("Wireless signal is using special encoding");
     }
 
     @Override
     public void decode() {
-        System.out.println("Wireless signal is decoded from digital format");
+        System.out.println("Wireless signal is being decoded digitally");
     }
 
     @Override
-    public void modulate() {
-        System.out.println("Wireless signal is modulated using QAM");
+    public void analyze() {
+        System.out.println("Wireless signal analysis in progress");
+    }
+
+    public void boost() {
+        System.out.println("Wireless signal is being boosted");
     }
 }

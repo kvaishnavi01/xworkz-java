@@ -6,22 +6,22 @@ public class TimeTraveler {
     }
 
     public void travelToPast() {
-        System.out.println("TimeTraveler visits ancient civilizations");
+        System.out.println("TimeTraveler is traveling to the past");
     }
 
     public void travelToFuture() {
-        System.out.println("TimeTraveler witnesses future technologies");
+        System.out.println("TimeTraveler is traveling to the future");
     }
 
-    public void blendIn() {
-        System.out.println("TimeTraveler adapts to different timelines");
+    public void observeHistory() {
+        System.out.println("TimeTraveler is observing historical events");
     }
 
-    public void fixTimeline() {
-        System.out.println("TimeTraveler prevents paradoxes");
+    public void avoidParadox() {
+        System.out.println("TimeTraveler is avoiding a time paradox");
     }
 
-    public void recordJourney() {
-        System.out.println("TimeTraveler documents time jumps");
+    public void returnToPresent() {
+        System.out.println("TimeTraveler is returning to the present");
     }
 }

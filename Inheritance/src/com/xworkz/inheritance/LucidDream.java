@@ -6,27 +6,31 @@ public class LucidDream extends Dream {
     }
 
     @Override
-    public void visualize() {
-        System.out.println("LucidDream creates vivid and controllable imagery");
+    public void start() {
+        System.out.println("Lucid Dream is beginning with awareness");
     }
 
     @Override
-    public void shiftScenes() {
-        System.out.println("LucidDream transitions between scenes intentionally");
+    public void shiftScene() {
+        System.out.println("Lucid Dreamer is controlling the scene shift");
     }
 
     @Override
-    public void feelEmotion() {
-        System.out.println("LucidDream allows awareness of dream emotions");
+    public void feelReal() {
+        System.out.println("Lucid Dream feels ultra-real");
     }
 
     @Override
-    public void loseControl() {
-        System.out.println("LucidDream maintains awareness and control");
+    public void fade() {
+        System.out.println("Lucid Dream is being stabilized to avoid fading");
     }
 
     @Override
-    public void fadeAway() {
-        System.out.println("LucidDream is often remembered clearly after waking");
+    public void end() {
+        System.out.println("Lucid Dream ends with memory recall");
+    }
+
+    public void controlDream() {
+        System.out.println("Lucid Dreamer is controlling the dream events");
     }
 }

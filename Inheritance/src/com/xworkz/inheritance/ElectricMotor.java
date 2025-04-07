@@ -6,27 +6,31 @@ public class ElectricMotor extends Motor {
     }
 
     @Override
-    public void rotate() {
-        System.out.println("Electric motor rotates using electromagnetic fields");
-    }
-
-    @Override
-    public void consumeEnergy() {
-        System.out.println("Electric motor uses electric current");
-    }
-
-    @Override
-    public void produceTorque() {
-        System.out.println("Electric motor generates torque through stator-rotor interaction");
-    }
-
-    @Override
-    public void operateContinuously() {
-        System.out.println("Electric motor runs efficiently with low maintenance");
+    public void start() {
+        System.out.println("Electric Motor starts with electric current");
     }
 
     @Override
     public void stop() {
-        System.out.println("Electric motor stops via electrical braking or switch");
+        System.out.println("Electric Motor stops immediately");
+    }
+
+    @Override
+    public void increaseSpeed() {
+        System.out.println("Electric Motor speed increases smoothly");
+    }
+
+    @Override
+    public void decreaseSpeed() {
+        System.out.println("Electric Motor speed decreases gradually");
+    }
+
+    @Override
+    public void checkTemperature() {
+        System.out.println("Electric Motor uses sensors to check temperature");
+    }
+
+    public void chargeBattery() {
+        System.out.println("Electric Motor charges its battery");
     }
 }

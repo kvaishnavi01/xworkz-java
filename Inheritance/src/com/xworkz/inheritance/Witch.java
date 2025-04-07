@@ -6,22 +6,22 @@ public class Witch {
     }
 
     public void castSpell() {
-        System.out.println("Witch casts an ancient spell");
+        System.out.println("Witch is casting a magical spell");
+    }
+
+    public void flyOnBroom() {
+        System.out.println("Witch is flying on a broomstick");
     }
 
     public void brewPotion() {
-        System.out.println("Witch brews a bubbling potion");
-    }
-
-    public void rideBroom() {
-        System.out.println("Witch rides a broom across the night sky");
+        System.out.println("Witch is brewing a potion");
     }
 
     public void summonSpirits() {
-        System.out.println("Witch summons forest spirits");
+        System.out.println("Witch is summoning spirits");
     }
 
-    public void readRunes() {
-        System.out.println("Witch reads runes for guidance");
+    public void vanish() {
+        System.out.println("Witch is vanishing in thin air");
     }
 }

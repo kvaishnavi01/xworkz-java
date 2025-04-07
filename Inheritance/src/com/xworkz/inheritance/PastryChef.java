@@ -29,4 +29,8 @@ public class PastryChef extends Cook {
     public void storeLeftovers() {
         System.out.println("Pastry Chef is storing cakes and desserts");
     }
+
+    public void flavour(){
+        System.out.println("Pastry flavour");
+    }
 }

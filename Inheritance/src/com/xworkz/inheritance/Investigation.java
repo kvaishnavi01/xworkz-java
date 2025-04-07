@@ -5,23 +5,23 @@ public class Investigation {
         System.out.println("no args const of Investigation");
     }
 
-    public void gatherEvidence() {
-        System.out.println("Investigation gathers evidence from the scene");
+    public void collectEvidence() {
+        System.out.println("Investigation collects evidence");
     }
 
-    public void interrogateWitnesses() {
-        System.out.println("Investigation interrogates witnesses");
+    public void interviewWitnesses() {
+        System.out.println("Investigation interviews witnesses");
     }
 
     public void analyzeData() {
-        System.out.println("Investigation analyzes collected data");
+        System.out.println("Investigation analyzes the collected data");
     }
 
-    public void identifySuspects() {
-        System.out.println("Investigation identifies potential suspects");
+    public void followLeads() {
+        System.out.println("Investigation follows leads");
     }
 
-    public void reportFindings() {
-        System.out.println("Investigation reports its findings");
+    public void writeReport() {
+        System.out.println("Investigation writes a final report");
     }
 }

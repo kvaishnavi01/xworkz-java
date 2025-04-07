@@ -13,15 +13,15 @@ public class Sculpture {
         System.out.println("Sculpture is being polished");
     }
 
-    public void transport() {
-        System.out.println("Sculpture is being transported");
-    }
-
     public void display() {
-        System.out.println("Sculpture is on display in a gallery");
+        System.out.println("Sculpture is displayed in the gallery");
     }
 
-    public void maintain() {
-        System.out.println("Sculpture is maintained regularly");
+    public void transport() {
+        System.out.println("Sculpture is being transported carefully");
+    }
+
+    public void restore() {
+        System.out.println("Sculpture is being restored");
     }
 }

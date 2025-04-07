@@ -29,4 +29,9 @@ public class Painter extends Artist {
     public void displayArt() {
         System.out.println("Painter is displaying in an art gallery");
     }
+
+    public void painting(){
+        System.out.println("painter painting");
+    }
+
 }

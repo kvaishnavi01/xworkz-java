@@ -7,26 +7,30 @@ public class MutantOrganism extends Organism {
 
     @Override
     public void grow() {
-        System.out.println("Mutant organism grows at an accelerated rate");
+        System.out.println("MutantOrganism grows rapidly");
     }
 
     @Override
     public void reproduce() {
-        System.out.println("Mutant organism reproduces with unpredictable mutations");
+        System.out.println("MutantOrganism reproduces with genetic variations");
+    }
+
+    @Override
+    public void metabolize() {
+        System.out.println("MutantOrganism has enhanced metabolism");
+    }
+
+    @Override
+    public void move() {
+        System.out.println("MutantOrganism moves in unpredictable ways");
     }
 
     @Override
     public void respondToStimuli() {
-        System.out.println("Mutant organism responds with enhanced senses");
+        System.out.println("MutantOrganism reacts intensely to stimuli");
     }
 
-    @Override
-    public void consumeEnergy() {
-        System.out.println("Mutant organism consumes unusual energy sources");
-    }
-
-    @Override
-    public void adapt() {
-        System.out.println("Mutant organism adapts instantly to hostile environments");
+    public void mutate() {
+        System.out.println("MutantOrganism is undergoing mutation");
     }
 }

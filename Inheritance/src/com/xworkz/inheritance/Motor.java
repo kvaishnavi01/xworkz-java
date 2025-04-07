@@ -5,23 +5,23 @@ public class Motor {
         System.out.println("no args const of Motor");
     }
 
-    public void rotate() {
-        System.out.println("Motor rotates to generate motion");
-    }
-
-    public void consumeEnergy() {
-        System.out.println("Motor consumes energy to work");
-    }
-
-    public void produceTorque() {
-        System.out.println("Motor produces torque");
-    }
-
-    public void operateContinuously() {
-        System.out.println("Motor operates continuously under load");
+    public void start() {
+        System.out.println("Motor starts running");
     }
 
     public void stop() {
-        System.out.println("Motor stops safely when turned off");
+        System.out.println("Motor stops running");
+    }
+
+    public void increaseSpeed() {
+        System.out.println("Motor speed is increasing");
+    }
+
+    public void decreaseSpeed() {
+        System.out.println("Motor speed is decreasing");
+    }
+
+    public void checkTemperature() {
+        System.out.println("Motor temperature is being checked");
     }
 }

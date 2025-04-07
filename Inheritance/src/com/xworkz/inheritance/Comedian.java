@@ -5,23 +5,23 @@ public class Comedian {
         System.out.println("no args const of Comedian");
     }
 
-    public void writeJokes() {
-        System.out.println("Comedian is writing jokes");
+    public void tellJoke() {
+        System.out.println("Comedian tells a funny joke");
     }
 
-    public void rehearse() {
-        System.out.println("Comedian is rehearsing the act");
+    public void mimic() {
+        System.out.println("Comedian mimics celebrities");
     }
 
-    public void perform() {
-        System.out.println("Comedian is performing in a show");
+    public void improvise() {
+        System.out.println("Comedian improvises on stage");
     }
 
-    public void interactWithAudience() {
-        System.out.println("Comedian is interacting with the audience");
+    public void writeScript() {
+        System.out.println("Comedian writes comedy scripts");
     }
 
-    public void uploadVideo() {
-        System.out.println("Comedian is uploading comedy video");
+    public void entertain() {
+        System.out.println("Comedian entertains the audience");
     }
 }

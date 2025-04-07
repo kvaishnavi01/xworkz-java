@@ -6,27 +6,31 @@ public class HealingPotion extends Potion {
     }
 
     @Override
-    public void mixIngredients() {
-        System.out.println("Healing potion is mixed with herbs and magic essence");
-    }
-
-    @Override
-    public void boil() {
-        System.out.println("Healing potion is gently boiled over a magic flame");
+    public void mix() {
+        System.out.println("Healing potion ingredients are carefully mixed");
     }
 
     @Override
     public void bottle() {
-        System.out.println("Healing potion is bottled in crystal flasks");
+        System.out.println("Healing potion is sealed in glass bottles");
     }
 
     @Override
     public void label() {
-        System.out.println("Healing potion label says: 'Restores 50 HP'");
+        System.out.println("Healing potion is labeled with dosage info");
+    }
+
+    @Override
+    public void store() {
+        System.out.println("Healing potion is stored in a cool place");
     }
 
     @Override
     public void test() {
-        System.out.println("Healing potion is tested on injured warriors");
+        System.out.println("Healing potion is tested on injured subjects");
+    }
+
+    public void apply() {
+        System.out.println("Healing potion is applied to wounds for recovery");
     }
 }

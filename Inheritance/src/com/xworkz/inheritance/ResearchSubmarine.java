@@ -7,26 +7,30 @@ public class ResearchSubmarine extends Submarine {
 
     @Override
     public void dive() {
-        System.out.println("Research submarine dives to explore ocean floor");
+        System.out.println("ResearchSubmarine dives to deep ocean levels");
     }
 
     @Override
     public void surface() {
-        System.out.println("Research submarine surfaces after data collection");
+        System.out.println("ResearchSubmarine surfaces after data collection");
     }
 
     @Override
     public void navigate() {
-        System.out.println("Research submarine uses advanced sonar mapping");
-    }
-
-    @Override
-    public void maintainPressure() {
-        System.out.println("Research submarine maintains lab-safe pressure levels");
+        System.out.println("ResearchSubmarine navigates using advanced sensors");
     }
 
     @Override
     public void communicate() {
-        System.out.println("Research submarine sends real-time data to research stations");
+        System.out.println("ResearchSubmarine sends data via encrypted signals");
+    }
+
+    @Override
+    public void maintainPressure() {
+        System.out.println("ResearchSubmarine maintains high-pressure tolerance");
+    }
+
+    public void collectSamples() {
+        System.out.println("ResearchSubmarine collects marine samples");
     }
 }

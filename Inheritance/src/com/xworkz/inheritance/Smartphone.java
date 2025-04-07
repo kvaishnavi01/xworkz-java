@@ -29,4 +29,8 @@ public class Smartphone extends Gadget {
     public void connectToWifi() {
         System.out.println("Smartphone is connecting to a Wi-Fi network");
     }
+
+    public void use(){
+        System.out.println("smartphone used");
+    }
 }

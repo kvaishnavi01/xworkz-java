@@ -6,27 +6,31 @@ public class OnlineEducation extends Education {
     }
 
     @Override
-    public void deliverContent() {
-        System.out.println("Online education delivers content through digital platforms");
+    public void teach() {
+        System.out.println("OnlineEducation provides virtual teaching");
     }
 
     @Override
-    public void evaluateStudents() {
-        System.out.println("Online education evaluates using quizzes and interactive tools");
+    public void assess() {
+        System.out.println("OnlineEducation conducts online assessments");
     }
 
     @Override
-    public void promoteSkills() {
-        System.out.println("Online education promotes digital and self-learning skills");
+    public void enroll() {
+        System.out.println("Students enroll via online portals");
     }
 
     @Override
-    public void provideCertification() {
-        System.out.println("Online education grants e-certificates via platforms");
+    public void conductClass() {
+        System.out.println("Online classes are conducted via video platforms");
     }
 
     @Override
-    public void encourageCuriosity() {
-        System.out.println("Online education encourages learners through diverse multimedia");
+    public void evaluate() {
+        System.out.println("OnlineEducation uses digital tools for evaluation");
+    }
+
+    public void provideRecordedLectures() {
+        System.out.println("OnlineEducation provides recorded lectures");
     }
 }
