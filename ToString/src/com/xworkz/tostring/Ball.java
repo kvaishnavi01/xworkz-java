@@ -16,4 +16,8 @@ public class Ball {
         return "sport is " + this.sport + " diameter is " + this.diameter + " indoor is " + this.isIndoor;
 
     }
+    @Override
+    public int hashCode(){
+        return 99;
+    }
 }

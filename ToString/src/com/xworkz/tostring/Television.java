@@ -17,4 +17,9 @@ public class Television {
                 " screen size is " + this.screenSize + " inches" +
                 " smart TV is " + this.isSmart;
     }
+    @Override
+    public int hashCode(){
+        return 13;
+    }
+
 }

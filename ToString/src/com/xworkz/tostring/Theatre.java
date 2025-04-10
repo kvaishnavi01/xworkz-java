@@ -15,4 +15,8 @@ public class Theatre {
     public String toString() {
         return "name is " + this.name + " screens are " + this.screens + " capacity is " + this.seatingCapacity;
     }
+    @Override
+    public int hashCode(){
+        return 63;
+    }
 }

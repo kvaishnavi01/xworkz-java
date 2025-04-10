@@ -15,4 +15,8 @@ public class CeilingFan {
     public String toString() {
         return "color is " + this.color + " speed levels are " + this.speedLevels + " remote controlled is " + this.isRemoteControlled;
     }
+    @Override
+    public int hashCode(){
+        return 83;
+    }
 }

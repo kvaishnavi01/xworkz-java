@@ -20,4 +20,8 @@ public class SchoolBag {
                 " has laptop slot is " + this.hasLaptopSlot +
                 " weight is " + this.weight + " kg";
     }
+    @Override
+    public int hashCode(){
+        return 40;
+    }
 }

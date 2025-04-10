@@ -17,4 +17,8 @@ public class Camera {
                 " resolution is " + this.resolution + "MP" +
                 " DSLR is " + this.isDSLR;
     }
+    @Override
+    public int hashCode(){
+        return 11;
+    }
 }

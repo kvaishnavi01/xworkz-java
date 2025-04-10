@@ -15,4 +15,8 @@ public class Comb {
     public String toString() {
         return "material is " + this.material + " teeth count is " + this.teethCount + " foldable is " + this.isFoldable;
     }
+    @Override
+    public int hashCode(){
+        return 87;
+    }
 }

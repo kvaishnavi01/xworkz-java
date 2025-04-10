@@ -17,4 +17,9 @@ public class Laptop {
                 " ram size is " + this.ramSize + "GB" +
                 " screen size is " + this.screenSize + " inches";
     }
+
+    @Override
+    public int hashCode(){
+        return 2;
+    }
 }

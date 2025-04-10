@@ -15,4 +15,8 @@ public class Shirt {
     public String toString() {
         return "color is " + this.color + " size is " + this.size + " price is " + this.price;
     }
+    @Override
+    public int hashCode(){
+        return 54;
+    }
 }

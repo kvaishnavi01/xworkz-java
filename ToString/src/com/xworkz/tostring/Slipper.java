@@ -15,4 +15,8 @@ public class Slipper {
     public String toString() {
         return "size is " + this.size + " price is " + this.price + " waterproof is " + this.isWaterproof;
     }
+    @Override
+    public int hashCode(){
+        return 86;
+    }
 }

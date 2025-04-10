@@ -15,4 +15,9 @@ public class Bulb {
     public String toString() {
         return "type is " + this.type + " wattage is " + this.wattage + " LED is " + this.isLED;
     }
+
+    @Override
+    public int hashCode(){
+        return 70;
+    }
 }

@@ -17,4 +17,9 @@ public class Bottle {
                 " volume is " + this.volume + "L" +
                 " reusable is " + this.isReusable;
     }
+
+    @Override
+    public int hashCode(){
+        return 43;
+    }
 }

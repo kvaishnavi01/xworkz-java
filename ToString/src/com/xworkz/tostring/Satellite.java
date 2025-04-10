@@ -15,4 +15,8 @@ public class Satellite {
     public String toString() {
         return "name is " + this.name + " weight is " + this.weight + " active is " + this.isActive;
     }
+    @Override
+    public int hashCode(){
+        return 50;
+    }
 }

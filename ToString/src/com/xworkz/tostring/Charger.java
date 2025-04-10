@@ -15,4 +15,8 @@ public class Charger {
     public String toString() {
         return "type is " + this.type + " power is " + this.power + " fast charging is " + this.isFastCharging;
     }
+    @Override
+    public int hashCode(){
+        return 93;
+    }
 }

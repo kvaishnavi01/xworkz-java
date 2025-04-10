@@ -15,4 +15,8 @@ public class Game {
     public String toString() {
         return "title is " + this.title + " levels are " + this.levels + " multiplayer is " + this.isMultiplayer;
     }
+    @Override
+    public int hashCode(){
+        return 57;
+    }
 }

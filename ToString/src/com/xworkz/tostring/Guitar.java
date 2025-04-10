@@ -15,4 +15,8 @@ public class Guitar {
     public String toString() {
         return "type is " + this.type + " strings are " + this.strings + " electric is " + this.isElectric;
     }
+    @Override
+    public int hashCode(){
+        return 47;
+    }
 }

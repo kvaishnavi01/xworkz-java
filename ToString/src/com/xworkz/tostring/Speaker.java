@@ -17,4 +17,9 @@ public class Speaker {
                 " wattage is " + this.wattage + "W" +
                 " bluetooth is " + this.isBluetooth;
     }
+
+    @Override
+    public int hashCode(){
+        return 17;
+    }
 }

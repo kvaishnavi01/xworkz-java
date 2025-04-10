@@ -15,4 +15,8 @@ public class Evidence {
     public String toString() {
         return "type is " + this.type + " weight is " + this.weight + " analyzed is " + this.isAnalyzed;
     }
+    @Override
+    public int hashCode(){
+        return 73;
+    }
 }

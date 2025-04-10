@@ -15,4 +15,8 @@ public class WaterBottle {
     public String toString() {
         return "brand is " + this.brand + " volume is " + this.volume + " steel is " + this.isSteel;
     }
+    @Override
+    public int hashCode(){
+        return 81;
+    }
 }

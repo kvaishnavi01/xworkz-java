@@ -17,4 +17,8 @@ public class Mobile {
                 " storage is " + this.storage + "GB" +
                 " price is ₹" + this.price;
     }
+    @Override
+    public int hashCode(){
+        return 7;
+    }
 }

@@ -15,4 +15,11 @@ public class Animal {
     public String toString() {
         return "species is " + this.species + " weight is " + this.weight + " carnivore is " + this.isCarnivore;
     }
+
+    @Override
+    public int hashCode(){
+        return 67;
+    }
+
+
 }

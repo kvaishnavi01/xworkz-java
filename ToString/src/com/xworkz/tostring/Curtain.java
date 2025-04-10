@@ -15,4 +15,8 @@ public class Curtain {
     public String toString() {
         return "fabric is " + this.fabric + " width is " + this.width + " printed is " + this.isPrinted;
     }
+    @Override
+    public int hashCode(){
+        return 89;
+    }
 }

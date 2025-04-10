@@ -15,4 +15,8 @@ public class Student {
     public String toString() {
         return "name is " + this.name + " roll number is " + this.rollNumber + " percentage is " + this.percentage;
     }
+    @Override
+    public int hashCode(){
+        return 56;
+    }
 }

@@ -17,4 +17,8 @@ public class Keyboard {
                 " mechanical is " + this.isMechanical +
                 " number of keys is " + this.numberOfKeys;
     }
+    @Override
+    public int hashCode(){
+        return 12;
+    }
 }

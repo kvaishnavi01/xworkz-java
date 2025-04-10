@@ -17,4 +17,8 @@ public class Volcano {
                 " height is " + this.height + " meters" +
                 " active is " + this.isActive;
     }
+    @Override
+    public int hashCode(){
+        return 29;
+    }
 }

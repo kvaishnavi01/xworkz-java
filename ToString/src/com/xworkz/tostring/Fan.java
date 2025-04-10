@@ -17,4 +17,8 @@ public class Fan {
                 " speed levels are " + this.speedLevels +
                 " color is " + this.color;
     }
+    @Override
+    public int hashCode(){
+        return 6;
+    }
 }

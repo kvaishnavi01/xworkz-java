@@ -15,4 +15,8 @@ public class USBDrive {
     public String toString() {
         return "brand is " + this.brand + " storage is " + this.storage + " encrypted is " + this.isEncrypted;
     }
+    @Override
+    public int hashCode(){
+        return 95;
+    }
 }

@@ -15,4 +15,8 @@ public class VendingMachine {
     public String toString() {
         return "location is " + this.location + " item count is " + this.itemCount + " touch enabled is " + this.isTouchEnabled;
     }
+    @Override
+    public int hashCode(){
+        return 78;
+    }
 }

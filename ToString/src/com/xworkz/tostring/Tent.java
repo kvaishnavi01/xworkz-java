@@ -15,4 +15,8 @@ public class Tent {
     public String toString() {
         return "color is " + this.color + " capacity is " + this.capacity + " waterproof is " + this.isWaterproof;
     }
+    @Override
+    public int hashCode(){
+        return 71;
+    }
 }

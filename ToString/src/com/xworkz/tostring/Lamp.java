@@ -17,4 +17,9 @@ public class Lamp {
                 " color is " + this.color +
                 " dimmable is " + this.isDimmable;
     }
+
+    @Override
+    public int hashCode(){
+        return 22;
+    }
 }

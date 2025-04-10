@@ -15,4 +15,8 @@ public class Clock {
     public String toString() {
         return "type is " + this.type + " alarm count is " + this.alarmCount + " digital is " + this.isDigital;
     }
+    @Override
+    public int hashCode(){
+        return 41;
+    }
 }

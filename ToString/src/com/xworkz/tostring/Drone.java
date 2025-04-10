@@ -17,4 +17,8 @@ public class Drone {
                 " flight time is " + this.flightTime + " mins" +
                 " camera included is " + this.hasCamera;
     }
+    @Override
+    public int hashCode(){
+        return 25;
+    }
 }

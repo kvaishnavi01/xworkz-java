@@ -17,4 +17,8 @@ public class Backpack {
                 " compartments are " + this.compartments +
                 " waterproof is " + this.isWaterproof;
     }
+    @Override
+    public int hashCode(){
+        return 14;
+    }
 }

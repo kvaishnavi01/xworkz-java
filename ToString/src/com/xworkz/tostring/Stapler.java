@@ -15,4 +15,8 @@ public class Stapler {
     public String toString() {
         return "model is " + this.model + " pin capacity is " + this.pinCapacity + " metal body is " + this.isMetalBody;
     }
+    @Override
+    public int hashCode(){
+        return 91;
+    }
 }

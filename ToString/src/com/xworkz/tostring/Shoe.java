@@ -17,4 +17,8 @@ public class Shoe {
                 " size is " + this.size +
                 " type is " + this.type;
     }
+    @Override
+    public int hashCode(){
+        return 9;
+    }
 }

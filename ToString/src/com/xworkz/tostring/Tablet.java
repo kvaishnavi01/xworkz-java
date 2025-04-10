@@ -17,4 +17,9 @@ public class Tablet {
                 " screen size is " + this.screenSize + " inches" +
                 " stylus support is " + this.supportsStylus;
     }
+
+    @Override
+    public int hashCode(){
+        return 20;
+    }
 }

@@ -15,4 +15,8 @@ public class Bus {
     public String toString() {
         return "route is " + this.route + " seats are " + this.seats + " fare is " + this.fare;
     }
+    @Override
+    public int hashCode(){
+        return 45;
+    }
 }

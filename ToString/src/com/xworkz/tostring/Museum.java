@@ -17,4 +17,8 @@ public class Museum {
                 " established year is " + this.establishedYear +
                 " virtual tour available is " + this.hasVirtualTour;
     }
+    @Override
+    public int hashCode(){
+        return 28;
+    }
 }

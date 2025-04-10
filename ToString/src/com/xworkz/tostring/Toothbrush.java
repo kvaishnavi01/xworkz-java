@@ -15,4 +15,8 @@ public class Toothbrush {
     public String toString() {
         return "brand is " + this.brand + " bristle count is " + this.bristleCount + " electric is " + this.isElectric;
     }
+    @Override
+    public int hashCode(){
+        return 85;
+    }
 }

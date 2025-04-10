@@ -17,4 +17,8 @@ public class Harbor {
                 " dock count is " + this.dockCount +
                 " handles cargo ships is " + this.handlesCargoShips;
     }
+    @Override
+    public int hashCode(){
+        return 32;
+    }
 }

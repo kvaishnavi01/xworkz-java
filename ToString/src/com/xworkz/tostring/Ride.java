@@ -15,4 +15,8 @@ public class Ride {
     public String toString() {
         return "ride is " + this.rideName + " duration is " + this.duration + " thrill ride is " + this.isThrillRide;
     }
+    @Override
+    public int hashCode(){
+        return 72;
+    }
 }

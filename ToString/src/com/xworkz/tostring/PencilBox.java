@@ -15,4 +15,8 @@ public class PencilBox {
     public String toString() {
         return "color is " + this.color + " slots are " + this.slots + " sharpener is " + this.hasSharpener;
     }
+    @Override
+    public int hashCode(){
+        return 80;
+    }
 }

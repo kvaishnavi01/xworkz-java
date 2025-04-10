@@ -15,4 +15,8 @@ public class Crop {
     public String toString() {
         return "type is " + this.type + " yield is " + this.yield + " seasonal is " + this.isSeasonal;
     }
+    @Override
+    public int hashCode(){
+        return 53;
+    }
 }

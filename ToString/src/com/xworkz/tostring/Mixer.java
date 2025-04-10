@@ -15,4 +15,8 @@ public class Mixer {
     public String toString() {
         return "brand is " + this.brand + " channels are " + this.channels + " bluetooth is " + this.hasBluetooth;
     }
+    @Override
+    public int hashCode(){
+        return 76;
+    }
 }

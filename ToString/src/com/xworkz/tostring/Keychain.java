@@ -15,4 +15,8 @@ public class Keychain {
     public String toString() {
         return "material is " + this.material + " key count is " + this.keyCount + " name tag is " + this.hasNameTag;
     }
+    @Override
+    public int hashCode(){
+        return 94;
+    }
 }

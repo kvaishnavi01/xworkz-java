@@ -15,4 +15,8 @@ public class SoilSensor {
     public String toString() {
         return "model is " + this.model + " moisture level is " + this.moistureLevel + " wireless is " + this.isWireless;
     }
+    @Override
+    public int hashCode(){
+        return 77;
+    }
 }

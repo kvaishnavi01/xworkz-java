@@ -17,4 +17,9 @@ public class Book {
                 " author is " + this.author +
                 " pages are " + this.pages;
     }
+
+    @Override
+    public int hashCode(){
+        return 8;
+    }
 }

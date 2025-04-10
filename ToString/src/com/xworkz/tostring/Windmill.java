@@ -17,4 +17,8 @@ public class Windmill {
                 " blade length is " + this.bladeLength + " meters" +
                 " energy output is " + this.energyOutput + " kW";
     }
+    @Override
+    public int hashCode(){
+        return 33;
+    }
 }

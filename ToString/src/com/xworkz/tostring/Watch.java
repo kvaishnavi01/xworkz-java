@@ -17,4 +17,8 @@ public class Watch {
                 " type is " + this.type +
                 " price is ₹" + this.price;
     }
+    @Override
+    public int hashCode(){
+        return 10;
+    }
 }

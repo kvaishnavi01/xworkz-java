@@ -17,4 +17,9 @@ public class Candle {
                 " burn time is " + this.burnTime + " hours" +
                 " soy based is " + this.isSoyBased;
     }
+
+    @Override
+    public int hashCode(){
+        return 31;
+    }
 }

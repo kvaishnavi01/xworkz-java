@@ -15,4 +15,8 @@ public class CricketPlayer {
     public String toString() {
         return "player name is " + this.playerName + " runs are " + this.runs + " captain is " + this.isCaptain;
     }
+    @Override
+    public int hashCode(){
+        return 48;
+    }
 }

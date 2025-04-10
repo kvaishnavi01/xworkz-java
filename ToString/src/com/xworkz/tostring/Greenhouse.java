@@ -18,4 +18,8 @@ public class Greenhouse {
                 " plant count is " + this.plantCount +
                 " irrigation system is " + this.hasIrrigationSystem;
     }
+    @Override
+    public int hashCode(){
+        return 27;
+    }
 }

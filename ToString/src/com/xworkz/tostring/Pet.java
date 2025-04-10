@@ -15,4 +15,8 @@ public class Pet {
     public String toString() {
         return "name is " + this.name + " age is " + this.age + " vaccinated is " + this.isVaccinated;
     }
+    @Override
+    public int hashCode(){
+        return 55;
+    }
 }

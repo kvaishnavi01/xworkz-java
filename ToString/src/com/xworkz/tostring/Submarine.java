@@ -17,4 +17,8 @@ public class Submarine {
                 " depth limit is " + this.depthLimit + " meters" +
                 " nuclear powered is " + this.nuclearPowered;
     }
+    @Override
+    public int hashCode(){
+        return 35;
+    }
 }

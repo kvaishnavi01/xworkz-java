@@ -15,4 +15,8 @@ public class Joystick {
     public String toString() {
         return "model is " + this.model + " buttons are " + this.buttons + " wireless is " + this.isWireless;
     }
+    @Override
+    public int hashCode(){
+        return 96;
+    }
 }

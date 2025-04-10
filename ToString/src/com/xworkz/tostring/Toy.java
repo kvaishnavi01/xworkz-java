@@ -17,4 +17,8 @@ public class Toy {
                 " price is " + this.price +
                 " type is " + this.type;
     }
+    @Override
+    public int hashCode(){
+        return 39;
+    }
 }

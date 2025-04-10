@@ -15,4 +15,8 @@ public class SchoolBench {
     public String toString() {
         return "material is " + this.material + " length is " + this.length + " backrest is " + this.hasBackrest;
     }
+    @Override
+    public int hashCode(){
+        return 82;
+    }
 }

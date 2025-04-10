@@ -17,4 +17,8 @@ public class Mouse {
                 " wireless is " + this.isWireless +
                 " DPI is " + this.dpi;
     }
+    @Override
+    public int hashCode(){
+        return 23;
+    }
 }

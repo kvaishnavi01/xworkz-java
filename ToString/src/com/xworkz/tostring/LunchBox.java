@@ -15,4 +15,8 @@ public class LunchBox {
     public String toString() {
         return "shape is " + this.shape + " compartments are " + this.compartments + " microwave safe is " + this.isMicrowaveSafe;
     }
+    @Override
+    public int hashCode(){
+        return 92;
+    }
 }

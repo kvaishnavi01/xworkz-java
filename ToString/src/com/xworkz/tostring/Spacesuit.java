@@ -17,4 +17,8 @@ public class Spacesuit {
                 " oxygen capacity is " + this.oxygenCapacity + " minutes" +
                 " radiation shield is " + this.radiationShield;
     }
+    @Override
+    public int hashCode(){
+        return 30;
+    }
 }

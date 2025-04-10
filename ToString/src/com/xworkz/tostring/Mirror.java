@@ -15,4 +15,8 @@ public class Mirror {
     public String toString() {
         return "shape is " + this.shape + " height is " + this.height + " wall mounted is " + this.isWallMounted;
     }
+    @Override
+    public int hashCode(){
+        return 88;
+    }
 }

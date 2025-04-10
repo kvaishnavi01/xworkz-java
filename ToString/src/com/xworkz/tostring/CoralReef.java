@@ -17,4 +17,8 @@ public class CoralReef {
                 " location is " + this.location +
                 " species count is " + this.speciesCount;
     }
+    @Override
+    public int hashCode(){
+        return 34;
+    }
 }

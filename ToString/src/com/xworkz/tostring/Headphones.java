@@ -15,4 +15,8 @@ public class Headphones {
     public String toString() {
         return "brand is " + this.brand + " price is " + this.price + " has mic is " + this.hasMic;
     }
+    @Override
+    public int hashCode(){
+        return 98;
+    }
 }

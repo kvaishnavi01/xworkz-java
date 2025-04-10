@@ -17,4 +17,8 @@ public class Pen {
                 " color is " + this.color +
                 " price is ₹" + this.price;
     }
+    @Override
+    public int hashCode(){
+        return 3;
+    }
 }

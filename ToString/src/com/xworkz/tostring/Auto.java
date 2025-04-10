@@ -15,4 +15,8 @@ public class Auto {
     public String toString() {
         return "driver is " + this.driverName + " fare is " + this.farePerKm + " route is " + this.routeNumber;
     }
+    @Override
+    public int hashCode(){
+        return 66;
+    }
 }

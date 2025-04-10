@@ -15,4 +15,8 @@ public class Hotel {
     public String toString() {
         return "name is " + this.name + " stars are " + this.stars + " wifi is " + this.hasWifi;
     }
+    @Override
+    public int hashCode(){
+        return 52;
+    }
 }

@@ -15,4 +15,8 @@ public class Doctor {
     public String toString() {
         return "name is " + this.name + " experience is " + this.experience + " surgeon is " + this.isSurgeon;
     }
+    @Override
+    public int hashCode(){
+        return 59;
+    }
 }

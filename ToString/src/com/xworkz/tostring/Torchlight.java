@@ -15,4 +15,8 @@ public class Torchlight {
     public String toString() {
         return "brand is " + this.brand + " battery life is " + this.batteryLife + " rechargeable is " + this.isRechargeable;
     }
+    @Override
+    public int hashCode(){
+        return 97;
+    }
 }

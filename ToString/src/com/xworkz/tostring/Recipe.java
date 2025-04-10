@@ -15,4 +15,8 @@ public class Recipe {
     public String toString() {
         return "dish name is " + this.dishName + " cooking time is " + this.cookingTime + " vegetarian is " + this.isVegetarian;
     }
+    @Override
+    public int hashCode(){
+        return 51;
+    }
 }

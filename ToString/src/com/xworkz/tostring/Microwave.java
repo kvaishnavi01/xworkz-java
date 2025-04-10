@@ -17,4 +17,9 @@ public class Microwave {
                 " power is " + this.power + "W" +
                 " grill function is " + this.hasGrillFunction;
     }
+
+    @Override
+    public int hashCode(){
+        return 15;
+    }
 }

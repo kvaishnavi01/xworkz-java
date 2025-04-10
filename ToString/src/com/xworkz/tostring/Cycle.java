@@ -17,4 +17,8 @@ public class Cycle {
                 " gear count is " + this.gearCount +
                 " frame material is " + this.frameMaterial;
     }
+    @Override
+    public int hashCode(){
+        return 24;
+    }
 }

@@ -17,4 +17,8 @@ public class Comet {
                 " orbital period is " + this.orbitalPeriod + " years" +
                 " visible to naked eye is " + this.isVisibleToNakedEye;
     }
+    @Override
+    public int hashCode(){
+        return 38;
+    }
 }

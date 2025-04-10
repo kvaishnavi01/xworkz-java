@@ -15,4 +15,9 @@ public class Smartwatch {
     public String toString() {
         return "brand is " + this.brand + " battery life is " + this.batteryLife + " water resistant is " + this.waterResistant;
     }
+
+    @Override
+    public int hashCode(){
+        return 68;
+    }
 }

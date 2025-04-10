@@ -17,4 +17,8 @@ public class Helmet {
                 " color is " + this.color +
                 " ISI certified is " + this.isISICertified;
     }
+    @Override
+    public int hashCode(){
+        return 16;
+    }
 }

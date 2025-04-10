@@ -15,4 +15,8 @@ public class TvRemote {
     public String toString() {
         return "brand is " + this.brand + " button count is " + this.buttonCount + " voice control is " + this.hasVoiceControl;
     }
+    @Override
+    public int hashCode(){
+        return 84;
+    }
 }

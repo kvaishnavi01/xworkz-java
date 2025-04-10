@@ -17,4 +17,9 @@ public class Chair {
                 " material is " + this.material +
                 " height is " + this.height + " ft";
     }
+
+    @Override
+    public int hashCode(){
+        return 4;
+    }
 }

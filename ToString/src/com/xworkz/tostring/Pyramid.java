@@ -17,4 +17,8 @@ public class Pyramid {
                 " height is " + this.height + " meters" +
                 " estimated construction year is " + this.estimatedConstructionYear;
     }
+    @Override
+    public int hashCode(){
+        return 37;
+    }
 }

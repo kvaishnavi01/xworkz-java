@@ -15,4 +15,8 @@ public class Dessert {
     public String toString() {
         return "name is " + this.name + " calories are " + this.calories + " cold is " + this.isCold;
     }
+    @Override
+    public int hashCode(){
+        return 69;
+    }
 }

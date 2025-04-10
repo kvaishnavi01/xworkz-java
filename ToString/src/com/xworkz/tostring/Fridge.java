@@ -17,4 +17,8 @@ public class Fridge {
                 " capacity is " + this.capacity + "L" +
                 " has freezer is " + this.hasFreezer;
     }
+    @Override
+    public int hashCode(){
+        return 19;
+    }
 }

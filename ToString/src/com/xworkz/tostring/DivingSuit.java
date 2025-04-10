@@ -15,4 +15,8 @@ public class DivingSuit {
     public String toString() {
         return "material is " + this.material + " depth limit is " + this.depthLimit + " oxygen tank is " + this.hasOxygenTank;
     }
+    @Override
+    public int hashCode(){
+        return 74;
+    }
 }

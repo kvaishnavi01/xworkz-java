@@ -15,4 +15,8 @@ public class Lock {
     public String toString() {
         return "type is " + this.type + " digits are " + this.digits + " grade is " + this.grade;
     }
+    @Override
+    public int hashCode(){
+        return 64;
+    }
 }

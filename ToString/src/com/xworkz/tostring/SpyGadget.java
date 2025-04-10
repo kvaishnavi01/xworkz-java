@@ -15,4 +15,8 @@ public class SpyGadget {
     public String toString() {
         return "name is " + this.name + " range is " + this.range + " encrypted is " + this.isEncrypted;
     }
+    @Override
+    public int hashCode(){
+        return 75;
+    }
 }

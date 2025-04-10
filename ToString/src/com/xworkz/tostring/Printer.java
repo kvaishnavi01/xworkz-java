@@ -17,4 +17,8 @@ public class Printer {
                 " color printing is " + this.isColor +
                 " pages per minute is " + this.pagesPerMinute;
     }
+    @Override
+    public int hashCode(){
+        return 18;
+    }
 }

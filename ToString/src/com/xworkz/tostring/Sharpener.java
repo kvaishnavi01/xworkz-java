@@ -15,4 +15,8 @@ public class Sharpener {
     public String toString() {
         return "brand is " + this.brand + " blade count is " + this.bladeCount + " container is " + this.hasContainer;
     }
+    @Override
+    public int hashCode(){
+        return 90;
+    }
 }

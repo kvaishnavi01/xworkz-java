@@ -17,4 +17,8 @@ public class Projector {
                 " resolution is " + this.resolution +
                 " portable is " + this.isPortable;
     }
+    @Override
+    public int hashCode(){
+        return 21;
+    }
 }

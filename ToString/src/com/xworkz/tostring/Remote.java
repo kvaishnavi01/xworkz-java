@@ -15,4 +15,8 @@ public class Remote {
     public String toString() {
         return "brand is " + this.brand + " buttons are " + this.buttons + " rechargeable is " + this.isRechargeable;
     }
+    @Override
+    public int hashCode(){
+        return 60;
+    }
 }

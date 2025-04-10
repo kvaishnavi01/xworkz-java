@@ -17,4 +17,8 @@ public class Telescope {
                 " magnification is " + this.magnification + "x" +
                 " mount type is " + this.mountType;
     }
+    @Override
+    public int hashCode(){
+        return 26;
+    }
 }

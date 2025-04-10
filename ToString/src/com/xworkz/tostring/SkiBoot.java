@@ -15,4 +15,8 @@ public class SkiBoot {
     public String toString() {
         return "brand is " + this.brand + " size is " + this.size + " waterproof is " + this.isWaterproof;
     }
+    @Override
+    public int hashCode(){
+        return 79;
+    }
 }

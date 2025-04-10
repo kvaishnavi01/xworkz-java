@@ -15,4 +15,8 @@ public class Instrument {
     public String toString() {
         return "type is " + this.type + " cost is " + this.cost + " electric is " + this.isElectric;
     }
+    @Override
+    public int hashCode(){
+        return 62;
+    }
 }

@@ -17,4 +17,8 @@ public class Planet {
                 " diameter is " + this.diameter + " km" +
                 " has rings is " + this.hasRings;
     }
+    @Override
+    public int hashCode(){
+        return 36;
+    }
 }

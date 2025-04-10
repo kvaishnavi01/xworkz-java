@@ -15,4 +15,8 @@ public class Currency {
     public String toString() {
         return "country is " + this.country + " value is " + this.valueInPaise + " symbol is " + this.symbol;
     }
+    @Override
+    public int hashCode(){
+        return 64;
+    }
 }

@@ -15,4 +15,8 @@ public class Exam {
     public String toString() {
         return "subject is " + this.subject + " marks are " + this.totalMarks + " grade is " + this.grade;
     }
+    @Override
+    public int hashCode(){
+        return 65;
+    }
 }
