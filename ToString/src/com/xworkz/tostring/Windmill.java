@@ -17,8 +17,26 @@ public class Windmill {
                 " blade length is " + this.bladeLength + " meters" +
                 " energy output is " + this.energyOutput + " kW";
     }
+
     @Override
     public int hashCode(){
         return 33;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null) {
+            System.out.println("ref is not null");
+            if(obj instanceof Windmill) {
+                System.out.println("will compare.....");
+                Windmill windmill = this;
+                Windmill windmill1 = (Windmill) obj;
+                if(windmill.location.equals(windmill1.location) && windmill.energyOutput == windmill1.energyOutput) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

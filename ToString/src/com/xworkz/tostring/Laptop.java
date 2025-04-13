@@ -22,4 +22,21 @@ public class Laptop {
     public int hashCode(){
         return 2;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null) {
+            System.out.println("ref is not null");
+            if(obj instanceof Laptop) {
+                System.out.println("will compare.....");
+                Laptop lap1 = this;
+                Laptop lap2 = (Laptop) obj;
+                if(lap1.ramSize == lap2.ramSize) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

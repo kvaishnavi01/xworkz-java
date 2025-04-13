@@ -17,8 +17,26 @@ public class Keyboard {
                 " mechanical is " + this.isMechanical +
                 " number of keys is " + this.numberOfKeys;
     }
+
     @Override
     public int hashCode(){
         return 12;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null) {
+            System.out.println("ref is not null");
+            if(obj instanceof Keyboard) {
+                System.out.println("will compare.....");
+                Keyboard k1 = this;
+                Keyboard k2 = (Keyboard) obj;
+                if(k1.isMechanical == k2.isMechanical) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

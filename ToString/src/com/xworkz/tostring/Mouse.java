@@ -17,8 +17,26 @@ public class Mouse {
                 " wireless is " + this.isWireless +
                 " DPI is " + this.dpi;
     }
+
     @Override
     public int hashCode(){
         return 23;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null) {
+            System.out.println("ref is not null");
+            if(obj instanceof Mouse) {
+                System.out.println("will compare.....");
+                Mouse m1 = this;
+                Mouse m2 = (Mouse) obj;
+                if(m1.brand.equals(m2.brand)) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

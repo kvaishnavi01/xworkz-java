@@ -15,8 +15,26 @@ public class PencilBox {
     public String toString() {
         return "color is " + this.color + " slots are " + this.slots + " sharpener is " + this.hasSharpener;
     }
+
     @Override
-    public int hashCode(){
+    public int hashCode() {
         return 80;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof PencilBox) {
+                System.out.println("will compare.....");
+                PencilBox p1 = this;
+                PencilBox p2 = (PencilBox) obj;
+                if (p1.color.equals(p2.color) && p1.slots == p2.slots && p1.hasSharpener == p2.hasSharpener) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

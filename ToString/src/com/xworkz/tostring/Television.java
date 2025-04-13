@@ -17,9 +17,26 @@ public class Television {
                 " screen size is " + this.screenSize + " inches" +
                 " smart TV is " + this.isSmart;
     }
+
     @Override
     public int hashCode(){
         return 13;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null) {
+            System.out.println("ref is not null");
+            if(obj instanceof Television) {
+                System.out.println("will compare.....");
+                Television t1 = this;
+                Television t2 = (Television) obj;
+                if(t1.screenSize == t2.screenSize) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

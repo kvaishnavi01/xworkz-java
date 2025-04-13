@@ -22,4 +22,21 @@ public class Microwave {
     public int hashCode(){
         return 15;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null) {
+            System.out.println("ref is not null");
+            if(obj instanceof Microwave) {
+                System.out.println("will compare.....");
+                Microwave m1 = this;
+                Microwave m2 = (Microwave) obj;
+                if(m1.hasGrillFunction == m2.hasGrillFunction) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

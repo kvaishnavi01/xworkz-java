@@ -17,8 +17,26 @@ public class Backpack {
                 " compartments are " + this.compartments +
                 " waterproof is " + this.isWaterproof;
     }
+
     @Override
     public int hashCode(){
         return 14;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null) {
+            System.out.println("ref is not null");
+            if(obj instanceof Backpack) {
+                System.out.println("will compare.....");
+                Backpack b1 = this;
+                Backpack b2 = (Backpack) obj;
+                if(b1.isWaterproof == b2.isWaterproof) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

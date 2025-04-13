@@ -17,7 +17,24 @@ public class Bulb {
     }
 
     @Override
-    public int hashCode(){
+    public int hashCode() {
         return 70;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Bulb) {
+                System.out.println("will compare.....");
+                Bulb b1 = this;
+                Bulb b2 = (Bulb) obj;
+                if (b1.type.equals(b2.type) && b1.wattage == b2.wattage && b1.isLED == b2.isLED) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

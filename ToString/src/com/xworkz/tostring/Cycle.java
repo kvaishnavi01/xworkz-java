@@ -17,8 +17,26 @@ public class Cycle {
                 " gear count is " + this.gearCount +
                 " frame material is " + this.frameMaterial;
     }
+
     @Override
     public int hashCode(){
         return 24;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null) {
+            System.out.println("ref is not null");
+            if(obj instanceof Cycle) {
+                System.out.println("will compare.....");
+                Cycle c1 = this;
+                Cycle c2 = (Cycle) obj;
+                if(c1.brand.equals(c2.brand)) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

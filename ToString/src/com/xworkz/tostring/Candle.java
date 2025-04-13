@@ -22,4 +22,21 @@ public class Candle {
     public int hashCode(){
         return 31;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null) {
+            System.out.println("ref is not null");
+            if(obj instanceof Candle) {
+                System.out.println("will compare.....");
+                Candle candle = this;
+                Candle candle1 = (Candle) obj;
+                if(candle.scent.equals(candle1.scent) && candle.burnTime == candle1.burnTime) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

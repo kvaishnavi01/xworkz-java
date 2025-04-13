@@ -17,8 +17,26 @@ public class Printer {
                 " color printing is " + this.isColor +
                 " pages per minute is " + this.pagesPerMinute;
     }
+
     @Override
     public int hashCode(){
         return 18;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null) {
+            System.out.println("ref is not null");
+            if(obj instanceof Printer) {
+                System.out.println("will compare.....");
+                Printer p1 = this;
+                Printer p2 = (Printer) obj;
+                if(p1.pagesPerMinute == p2.pagesPerMinute) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

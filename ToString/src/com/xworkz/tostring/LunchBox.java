@@ -15,8 +15,26 @@ public class LunchBox {
     public String toString() {
         return "shape is " + this.shape + " compartments are " + this.compartments + " microwave safe is " + this.isMicrowaveSafe;
     }
+
     @Override
-    public int hashCode(){
+    public int hashCode() {
         return 92;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof LunchBox) {
+                System.out.println("will compare.....");
+                LunchBox l1 = this;
+                LunchBox l2 = (LunchBox) obj;
+                if (l1.shape.equals(l2.shape) && l1.compartments == l2.compartments && l1.isMicrowaveSafe == l2.isMicrowaveSafe) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

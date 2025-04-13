@@ -17,8 +17,26 @@ public class Projector {
                 " resolution is " + this.resolution +
                 " portable is " + this.isPortable;
     }
+
     @Override
     public int hashCode(){
         return 21;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null) {
+            System.out.println("ref is not null");
+            if(obj instanceof Projector) {
+                System.out.println("will compare.....");
+                Projector p1 = this;
+                Projector p2 = (Projector) obj;
+                if(p1.resolution.equals(p2.resolution)) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }
