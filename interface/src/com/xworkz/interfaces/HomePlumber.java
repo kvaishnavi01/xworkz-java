@@ -10,4 +10,7 @@ public class HomePlumber implements Plumber {
     public void inspectDrains() {
         System.out.println("Inspects and cleans drains.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

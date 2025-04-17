@@ -12,4 +12,7 @@ public class WirelessMouse implements Mouse {
     public void connectToPC() {
         System.out.println("Mouse connected to PC.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

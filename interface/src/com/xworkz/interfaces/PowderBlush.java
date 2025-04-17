@@ -10,4 +10,8 @@ public class PowderBlush implements Blush {
     public void highlightCheeks() {
         System.out.println("Highlights cheekbones with blush.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
+
 }

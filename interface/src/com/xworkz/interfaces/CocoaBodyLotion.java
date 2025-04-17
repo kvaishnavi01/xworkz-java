@@ -10,4 +10,7 @@ public class CocoaBodyLotion implements BodyLotion {
     public void repairDryness() {
         System.out.println("Repairs skin dryness and flakiness.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

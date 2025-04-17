@@ -12,4 +12,7 @@ public class MiniSpeaker implements BluetoothSpeaker {
     public void disconnect() {
         System.out.println("Bluetooth speaker disconnected.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

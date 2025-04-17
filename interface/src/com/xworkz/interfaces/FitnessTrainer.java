@@ -10,4 +10,7 @@ public class FitnessTrainer implements PersonalTrainer {
     public void monitorProgress() {
         System.out.println("Monitors client progress and adjusts plans.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

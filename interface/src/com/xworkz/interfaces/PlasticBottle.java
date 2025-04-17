@@ -10,4 +10,7 @@ public class PlasticBottle implements Bottle {
     public void recycle() {
         System.out.println("Recycling the bottle.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

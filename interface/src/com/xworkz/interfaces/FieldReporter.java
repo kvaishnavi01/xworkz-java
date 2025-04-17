@@ -10,4 +10,7 @@ public class FieldReporter implements NewsReporter {
     public void interviewPeople() {
         System.out.println("Interviews people for news stories.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

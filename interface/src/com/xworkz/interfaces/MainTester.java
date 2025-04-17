@@ -7,6 +7,7 @@ public class MainTester {
         chef.cook();
         chef.planMenu();
         chef.manageKitchen();
+        chef.getDescription();
 
         System.out.println("######################################################");
 
@@ -14,6 +15,7 @@ public class MainTester {
         driver.drive();
         driver.checkFuel();
         driver.collectFare();
+        driver.getDescription();
 
         System.out.println("######################################################");
 
@@ -21,6 +23,7 @@ public class MainTester {
         pilot.flyAircraft();
         pilot.checkWeather();
         pilot.passengerAnnouncement();
+        pilot.getDescription();
 
         System.out.println("######################################################");
 
@@ -28,6 +31,7 @@ public class MainTester {
         teacher.teachSubject();
         teacher.assignHomework();
         teacher.evaluateExam();
+        teacher.getDescription();
 
         System.out.println("######################################################");
 
@@ -35,6 +39,7 @@ public class MainTester {
         plumber.fixLeak();
         plumber.installPipes();
         plumber.inspectDrains();
+        plumber.getDescription();
 
         System.out.println("######################################################");
 
@@ -43,6 +48,7 @@ public class MainTester {
         architect.designBuilding();
         architect.createBlueprint();
         architect.inspectConstruction();
+        architect.getDescription();
 
         System.out.println("######################################################");
 
@@ -50,6 +56,7 @@ public class MainTester {
         florist.arrangeFlowers();
         florist.takeOrders();
         florist.deliverBouquets();
+        florist.getDescription();
 
         System.out.println("######################################################");
 
@@ -57,6 +64,7 @@ public class MainTester {
         musician.playInstrument();
         musician.composeSong();
         musician.attendRehearsal();
+        musician.getDescription();
 
         System.out.println("######################################################");
 
@@ -64,6 +72,7 @@ public class MainTester {
         reporter.gatherNews();
         reporter.reportLive();
         reporter.interviewPeople();
+        reporter.getDescription();
 
         System.out.println("######################################################");
 
@@ -71,6 +80,8 @@ public class MainTester {
         designer.sketchDesigns();
         designer.chooseFabric();
         designer.attendFashionShow();
+        designer.getDescription();
+
 
         System.out.println("######################################################");
 
@@ -78,6 +89,7 @@ public class MainTester {
         agent.showProperties();
         agent.negotiateDeals();
         agent.handlePaperwork();
+        agent.getDescription();
 
         System.out.println("######################################################");
 
@@ -85,6 +97,7 @@ public class MainTester {
         bartender.mixDrinks();
         bartender.takeOrders();
         bartender.maintainBar();
+        bartender.getDescription();
 
         System.out.println("######################################################");
 
@@ -92,6 +105,7 @@ public class MainTester {
         security.patrolArea();
         security.monitorCCTV();
         security.checkID();
+        security.getDescription();
 
         System.out.println("######################################################");
 
@@ -99,6 +113,7 @@ public class MainTester {
         bankManager.approveLoan();
         bankManager.manageAccounts();
         bankManager.meetCustomers();
+        bankManager.getDescription();
 
         System.out.println("######################################################");
 
@@ -106,6 +121,7 @@ public class MainTester {
         writer.writeArticle();
         writer.proofreadContent();
         writer.researchTopic();
+        writer.getDescription();
 
         System.out.println("######################################################");
 
@@ -113,6 +129,7 @@ public class MainTester {
         tourGuide.giveTour();
         tourGuide.provideInformation();
         tourGuide.ensureSafety();
+        tourGuide.getDescription();
 
         System.out.println("######################################################");
 
@@ -120,6 +137,7 @@ public class MainTester {
         scientist.conductResearch();
         scientist.publishPapers();
         scientist.presentFindings();
+        scientist.getDescription();
 
         System.out.println("######################################################");
 
@@ -127,6 +145,7 @@ public class MainTester {
         firefighter.extinguishFire();
         firefighter.performRescue();
         firefighter.inspectFireHazards();
+        firefighter.getDescription();
 
         System.out.println("######################################################");
 
@@ -134,6 +153,7 @@ public class MainTester {
         vet.treatAnimals();
         vet.performSurgery();
         vet.prescribeMedication();
+        vet.getDescription();
 
         System.out.println("######################################################");
 
@@ -141,6 +161,7 @@ public class MainTester {
         gardener.plantTrees();
         gardener.maintainLawns();
         gardener.landscapeGardens();
+        gardener.getDescription();
 
         System.out.println("######################################################");
 
@@ -148,13 +169,14 @@ public class MainTester {
         artist.createArtwork();
         artist.showcaseArt();
         artist.collaborateOnProjects();
-
+        artist.getDescription();
         System.out.println("######################################################");
 
         Librarian librarian = new DigitalLibrarian();
         librarian.catalogBooks();
         librarian.assistPatrons();
         librarian.organizeEvents();
+        librarian.getDescription();
 
         System.out.println("######################################################");
 
@@ -162,6 +184,7 @@ public class MainTester {
         trainer.createWorkoutPlan();
         trainer.demonstrateExercises();
         trainer.monitorProgress();
+        trainer.getDescription();
 
         System.out.println("######################################################");
 
@@ -169,6 +192,7 @@ public class MainTester {
         explorer.planMission();
         explorer.analyzeData();
         explorer.performExtravehicularActivity();
+        explorer.getDescription();
 
         System.out.println("######################################################");
 
@@ -176,6 +200,7 @@ public class MainTester {
         coralEcosystemSpecialist.studyMarineLife();
         coralEcosystemSpecialist.monitorEcosystemHealth();
         coralEcosystemSpecialist.leadResearchExpedition();
+        coralEcosystemSpecialist.getDescription();
 
         System.out.println("######################################################");
 
@@ -183,6 +208,7 @@ public class MainTester {
         pencil.write();
         pencil.erase();
         pencil.sharpen();
+        pencil.getDescription();
 
         System.out.println("######################################################");
 
@@ -190,6 +216,7 @@ public class MainTester {
         notebook.open();
         notebook.writePage();
         notebook.close();
+        notebook.getDescription();
 
         System.out.println("######################################################");
 
@@ -197,6 +224,7 @@ public class MainTester {
         mug.fill();
         mug.drink();
         mug.wash();
+        mug.getDescription();
 
         System.out.println("######################################################");
 
@@ -204,6 +232,7 @@ public class MainTester {
         phone.makeCall();
         phone.receiveCall();
         phone.charge();
+        phone.getDescription();
 
         System.out.println("######################################################");
 
@@ -211,6 +240,7 @@ public class MainTester {
         spoon.scoop();
         spoon.stir();
         spoon.clean();
+        spoon.getDescription();
 
         System.out.println("######################################################");
 
@@ -218,6 +248,7 @@ public class MainTester {
         bottle.fillWater();
         bottle.drinkWater();
         bottle.recycle();
+        bottle.getDescription();
 
         System.out.println("######################################################");
 
@@ -225,6 +256,7 @@ public class MainTester {
         bag.carry();
         bag.zip();
         bag.unpack();
+        bag.getDescription();
 
         System.out.println("######################################################");
 
@@ -232,6 +264,7 @@ public class MainTester {
         keyboard.type();
         keyboard.backlight();
         keyboard.connect();
+        keyboard.getDescription();
 
         System.out.println("######################################################");
 
@@ -239,6 +272,7 @@ public class MainTester {
         chair.sit();
         chair.recline();
         chair.roll();
+        chair.getDescription();
 
         System.out.println("######################################################");
 
@@ -246,6 +280,7 @@ public class MainTester {
         remote.turnOn();
         remote.turnOff();
         remote.changeChannel();
+        remote.getDescription();
 
         System.out.println("######################################################");
 
@@ -253,6 +288,7 @@ public class MainTester {
         blush.applyColor();
         blush.blend();
         blush.highlightCheeks();
+        blush.getDescription();
 
         System.out.println("######################################################");
 
@@ -260,6 +296,7 @@ public class MainTester {
         lipstick.twistOpen();
         lipstick.applyOnLips();
         lipstick.sealColor();
+        lipstick.getDescription();
 
         System.out.println("######################################################");
 
@@ -267,6 +304,7 @@ public class MainTester {
         primer.prepSkin();
         primer.minimizePores();
         primer.smoothTexture();
+        primer.getDescription();
 
         System.out.println("######################################################");
 
@@ -274,6 +312,7 @@ public class MainTester {
         eyeliner.drawLine();
         eyeliner.defineEyes();
         eyeliner.dryQuickly();
+        eyeliner.getDescription();
 
         System.out.println("######################################################");
 
@@ -281,6 +320,7 @@ public class MainTester {
         foundation.matchSkinTone();
         foundation.provideCoverage();
         foundation.stayLong();
+        foundation.getDescription();
 
         System.out.println("######################################################");
 
@@ -288,6 +328,7 @@ public class MainTester {
         concealer.hideSpots();
         concealer.blendWithSkin();
         concealer.brightenUnderEyes();
+        concealer.getDescription();
 
         System.out.println("######################################################");
 
@@ -295,6 +336,7 @@ public class MainTester {
         mascara.liftLashes();
         mascara.addVolume();
         mascara.waterproofEffect();
+        mascara.getDescription();
 
         System.out.println("######################################################");
 
@@ -302,6 +344,7 @@ public class MainTester {
         highlighter.addGlow();
         highlighter.applyAboveCheeks();
         highlighter.reflectLight();
+        highlighter.getDescription();
 
         System.out.println("######################################################");
 
@@ -309,6 +352,7 @@ public class MainTester {
         compact.setMakeup();
         compact.reduceShine();
         compact.carryEasily();
+        compact.getDescription();
 
         System.out.println("######################################################");
 
@@ -316,6 +360,7 @@ public class MainTester {
         browPencil.shapeBrows();
         browPencil.fillGaps();
         browPencil.createDefinition();
+        browPencil.getDescription();
 
         System.out.println("######################################################");
 
@@ -323,6 +368,7 @@ public class MainTester {
         panipuri.prepareWater();
         panipuri.fillPuri();
         panipuri.serve();
+        panipuri.getDescription();
 
         System.out.println("######################################################");
 
@@ -330,6 +376,7 @@ public class MainTester {
         dahipuri.addCurd();
         dahipuri.sprinkleMasala();
         dahipuri.plateUp();
+        dahipuri.getDescription();
 
         System.out.println("######################################################");
 
@@ -337,6 +384,7 @@ public class MainTester {
         sevpuri.addToppings();
         sevpuri.crushPuri();
         sevpuri.serveWithChutney();
+        sevpuri.getDescription();
 
         System.out.println("######################################################");
 
@@ -344,6 +392,7 @@ public class MainTester {
         pavBhaji.cookBhaji();
         pavBhaji.toastPav();
         pavBhaji.garnish();
+        pavBhaji.getDescription();
 
         System.out.println("######################################################");
 
@@ -351,6 +400,7 @@ public class MainTester {
         vadaPav.fryVada();
         vadaPav.applyChutney();
         vadaPav.wrapInPaper();
+        vadaPav.getDescription();
 
         System.out.println("######################################################");
 
@@ -358,6 +408,7 @@ public class MainTester {
         misal.makeRassa();
         misal.fryUsal();
         misal.topWithFarsan();
+        misal.getDescription();
 
         System.out.println("######################################################");
 
@@ -365,6 +416,7 @@ public class MainTester {
         bhel.mixPuffedRice();
         bhel.addVeggies();
         bhel.squeezeLemon();
+        bhel.getDescription();
 
         System.out.println("######################################################");
 
@@ -372,6 +424,7 @@ public class MainTester {
         ragda.prepareRagda();
         ragda.shallowFryPattice();
         ragda.serveWithGarnish();
+        ragda.getDescription();
 
         System.out.println("######################################################");
 
@@ -379,6 +432,7 @@ public class MainTester {
         frankie.prepareFilling();
         frankie.rollRoti();
         frankie.packWrap();
+        frankie.getDescription();
 
         System.out.println("######################################################");
 
@@ -386,6 +440,7 @@ public class MainTester {
         bhaji.sliceOnions();
         bhaji.coatWithBesan();
         bhaji.deepFry();
+        bhaji.getDescription();
 
         System.out.println("######################################################");
 
@@ -393,6 +448,7 @@ public class MainTester {
         shampoo.cleanseHair();
         shampoo.addFragrance();
         shampoo.strengthenRoots();
+        shampoo.getDescription();
 
         System.out.println("######################################################");
 
@@ -400,6 +456,8 @@ public class MainTester {
         conditioner.softenHair();
         conditioner.reduceFrizz();
         conditioner.addShine();
+        conditioner.getDescription();
+
 
         System.out.println("######################################################");
 
@@ -407,6 +465,7 @@ public class MainTester {
         faceWash.removeDirt();
         faceWash.refreshSkin();
         faceWash.controlOil();
+        faceWash.getDescription();
 
         System.out.println("######################################################");
 
@@ -414,6 +473,7 @@ public class MainTester {
         faceScrub.exfoliate();
         faceScrub.unclogPores();
         faceScrub.brightenSkin();
+        faceScrub.getDescription();
 
         System.out.println("######################################################");
 
@@ -421,6 +481,7 @@ public class MainTester {
         bodyLotion.hydrateSkin();
         bodyLotion.smoothenTexture();
         bodyLotion.repairDryness();
+        bodyLotion.getDescription();
 
         System.out.println("######################################################");
 
@@ -428,6 +489,7 @@ public class MainTester {
         handWash.killGerms();
         handWash.moisturizeHands();
         handWash.leaveFragrance();
+        handWash.getDescription();
 
         System.out.println("######################################################");
 
@@ -435,6 +497,7 @@ public class MainTester {
         moisturizer.lockMoisture();
         moisturizer.healSkin();
         moisturizer.preventDryness();
+        moisturizer.getDescription();
 
         System.out.println("######################################################");
 
@@ -442,6 +505,7 @@ public class MainTester {
         hairGel.styleHair();
         hairGel.provideHold();
         hairGel.addTexture();
+        hairGel.getDescription();
 
         System.out.println("######################################################");
 
@@ -449,6 +513,7 @@ public class MainTester {
         beardOil.nourishBeard();
         beardOil.softenBeard();
         beardOil.promoteGrowth();
+        beardOil.getDescription();
 
         System.out.println("######################################################");
 
@@ -456,12 +521,14 @@ public class MainTester {
         toner.tightenPores();
         toner.balancePH();
         toner.refreshSkin();
+        toner.getDescription();
 
         System.out.println("######################################################");
 
         Charger charger = new MobileCharger();
         charger.plugIn();
         charger.startCharging();
+        charger.getDescription();
         charger.stopCharging();
 
         System.out.println("######################################################");
@@ -470,6 +537,7 @@ public class MainTester {
         earphone.playAudio();
         earphone.adjustVolume();
         earphone.disconnect();
+        earphone.getDescription();
 
         System.out.println("######################################################");
 
@@ -477,6 +545,7 @@ public class MainTester {
         earpods.connectBluetooth();
         earpods.playMusic();
         earpods.chargeCase();
+        earpods.getDescription();
 
         System.out.println("######################################################");
 
@@ -484,6 +553,7 @@ public class MainTester {
         powerBank.chargeDevice();
         powerBank.checkBattery();
         powerBank.turnOff();
+        powerBank.getDescription();
 
         System.out.println("######################################################");
 
@@ -491,6 +561,7 @@ public class MainTester {
         speaker.connectPhone();
         speaker.playSound();
         speaker.disconnect();
+        speaker.getDescription();
 
         System.out.println("######################################################");
 
@@ -498,6 +569,7 @@ public class MainTester {
         watch.trackSteps();
         watch.showNotifications();
         watch.measureHeartRate();
+        watch.getDescription();
 
         System.out.println("######################################################");
 
@@ -505,6 +577,7 @@ public class MainTester {
         laptop.bootUp();
         laptop.runProgram();
         laptop.shutDown();
+        laptop.getDescription();
 
         System.out.println("######################################################");
 
@@ -512,6 +585,8 @@ public class MainTester {
         mouse.click();
         mouse.scroll();
         mouse.connectToPC();
+        mouse.getDescription();
+
 
         System.out.println("######################################################");
 
@@ -519,6 +594,7 @@ public class MainTester {
         monitor.displayOutput();
         monitor.changeBrightness();
         monitor.powerOff();
+        monitor.getDescription();
 
         System.out.println("######################################################");
 

@@ -10,4 +10,7 @@ public class CreamConcealer implements Concealer {
     public void brightenUnderEyes() {
         System.out.println("Brightens under-eye area.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

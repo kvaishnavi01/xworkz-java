@@ -10,4 +10,7 @@ public class CommercialPilot implements Pilot {
     public void passengerAnnouncement() {
         System.out.println("Makes passenger announcements.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

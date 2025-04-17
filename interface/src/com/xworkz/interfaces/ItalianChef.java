@@ -10,4 +10,7 @@ public class ItalianChef implements Chef {
     public void manageKitchen() {
         System.out.println("Manages the kitchen staff and inventory.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

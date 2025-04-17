@@ -12,4 +12,7 @@ public class KolhapuriMisal implements Misal {
     public void topWithFarsan() {
         System.out.println("Tops misal with crunchy farsan.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

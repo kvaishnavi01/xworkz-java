@@ -10,4 +10,7 @@ public class BranchBankManager implements BankManager {
     public void meetCustomers() {
         System.out.println("Meets customers to resolve banking issues.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

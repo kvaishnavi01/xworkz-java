@@ -10,4 +10,7 @@ public class MallSecurityGuard implements SecurityGuard {
     public void checkID() {
         System.out.println("Checks IDs of mall visitors.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

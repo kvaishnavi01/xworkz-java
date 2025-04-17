@@ -10,4 +10,7 @@ public class PressedCompact implements Compact {
     public void carryEasily() {
         System.out.println("Fits compactly into bags.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

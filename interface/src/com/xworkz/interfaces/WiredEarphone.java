@@ -12,4 +12,7 @@ public class WiredEarphone implements Earphone {
     public void disconnect() {
         System.out.println("Wired earphone disconnected.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

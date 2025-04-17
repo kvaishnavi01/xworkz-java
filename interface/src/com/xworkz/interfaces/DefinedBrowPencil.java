@@ -10,4 +10,7 @@ public class DefinedBrowPencil implements BrowPencil {
     public void createDefinition() {
         System.out.println("Creates defined eyebrow look.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

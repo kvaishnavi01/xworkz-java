@@ -10,4 +10,7 @@ public class CoralEcosystemSpecialist implements AquaticResearcher {
     public void leadResearchExpedition() {
         System.out.println("Leads research expeditions to study coral reefs.");
     }
+    public String getDescription() {
+        return "Conducting research on marine ecosystems.";
+    }
 }

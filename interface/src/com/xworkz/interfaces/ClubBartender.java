@@ -10,4 +10,7 @@ public class ClubBartender implements Bartender {
     public void maintainBar() {
         System.out.println("Maintains cleanliness and stock at the bar.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

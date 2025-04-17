@@ -10,4 +10,7 @@ public class MarsMissionSpecialist implements SpaceExplorer {
     public void performExtravehicularActivity() {
         System.out.println("Performs EVAs (Extravehicular Activities) on Mars.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

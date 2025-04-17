@@ -13,6 +13,11 @@ public class PilotDriver implements Pilot, Driver {
         System.out.println("Makes announcements for passengers.");
     }
 
+    @Override
+    public String getDescription() {
+        return Pilot.super.getDescription();
+    }
+
     public void drive() {
         System.out.println("Drives vehicles.");
     }

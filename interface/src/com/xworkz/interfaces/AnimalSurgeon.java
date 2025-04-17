@@ -10,4 +10,7 @@ public class AnimalSurgeon implements Veterinarian {
     public void prescribeMedication() {
         System.out.println("Prescribes medication for animals.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

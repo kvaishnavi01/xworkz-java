@@ -10,4 +10,7 @@ public class HBPencil implements Pencil {
     public void sharpen() {
         System.out.println("Sharpening the pencil.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

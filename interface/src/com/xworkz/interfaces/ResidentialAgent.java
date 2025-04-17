@@ -10,4 +10,7 @@ public class ResidentialAgent implements RealEstateAgent {
     public void handlePaperwork() {
         System.out.println("Handles paperwork for property deals.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

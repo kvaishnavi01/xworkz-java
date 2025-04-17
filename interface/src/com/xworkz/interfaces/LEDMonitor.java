@@ -12,4 +12,7 @@ public class LEDMonitor implements Monitor {
     public void powerOff() {
         System.out.println("Powering off the monitor.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

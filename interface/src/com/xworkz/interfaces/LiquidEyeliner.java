@@ -10,4 +10,7 @@ public class LiquidEyeliner implements Eyeliner {
     public void dryQuickly() {
         System.out.println("Dries quickly for smudge-proof look.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

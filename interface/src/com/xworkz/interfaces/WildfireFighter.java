@@ -10,4 +10,7 @@ public class WildfireFighter implements Firefighter {
     public void inspectFireHazards() {
         System.out.println("Inspects areas for fire hazards.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

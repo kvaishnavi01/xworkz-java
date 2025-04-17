@@ -10,4 +10,7 @@ public class WalnutFaceScrub implements FaceScrub {
     public void brightenSkin() {
         System.out.println("Brightens dull skin tone.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

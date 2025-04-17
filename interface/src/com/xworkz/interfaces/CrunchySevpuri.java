@@ -12,4 +12,7 @@ public class CrunchySevpuri implements Sevpuri {
     public void serveWithChutney() {
         System.out.println("Serves with sweet and spicy chutneys.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

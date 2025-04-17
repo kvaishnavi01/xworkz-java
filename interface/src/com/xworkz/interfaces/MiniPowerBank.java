@@ -12,4 +12,7 @@ public class MiniPowerBank implements PowerBank {
     public void turnOff() {
         System.out.println("Turning off power bank.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

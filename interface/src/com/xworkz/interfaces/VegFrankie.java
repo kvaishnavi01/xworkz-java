@@ -12,4 +12,7 @@ public class VegFrankie implements Frankie {
     public void packWrap() {
         System.out.println("Wraps and packs the frankie.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

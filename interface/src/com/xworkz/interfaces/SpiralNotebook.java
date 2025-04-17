@@ -10,4 +10,7 @@ public class SpiralNotebook implements Notebook {
     public void close() {
         System.out.println("Closing the notebook.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

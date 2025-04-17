@@ -10,6 +10,12 @@ class OutdoorSpecialist implements Gardener, TourGuide, Veterinarian, ContentWri
     public void landscapeGardens() {
         System.out.println("OutdoorSpecialist: Designing a garden landscape.");
     }
+
+    @Override
+    public String getDescription() {
+        return Gardener.super.getDescription();
+    }
+
     public void giveTour() {
         System.out.println("OutdoorSpecialist: Guiding a nature trail tour.");
     }

@@ -10,4 +10,7 @@ public class SilkyConditioner implements Conditioner {
     public void addShine() {
         System.out.println("Adds shine to dull hair.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

@@ -10,4 +10,7 @@ public class UrbanGardener implements Gardener {
     public void landscapeGardens() {
         System.out.println("Designs and landscapes urban gardens.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

@@ -12,4 +12,7 @@ public class SpicyVadaPav implements VadaPav {
     public void wrapInPaper() {
         System.out.println("Wraps vada pav in newspaper and serves.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

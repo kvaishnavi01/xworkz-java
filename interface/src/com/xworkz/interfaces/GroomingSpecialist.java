@@ -10,6 +10,12 @@ class GroomingSpecialist implements BeardOil, BodyLotion, Conditioner, FaceWash,
     public void promoteGrowth() {
         System.out.println("GroomingSpecialist: Promoting beard growth with oil.");
     }
+
+    @Override
+    public String getDescription() {
+        return BeardOil.super.getDescription();
+    }
+
     public void hydrateSkin() {
         System.out.println("GroomingSpecialist: Hydrating skin with body lotion.");
     }

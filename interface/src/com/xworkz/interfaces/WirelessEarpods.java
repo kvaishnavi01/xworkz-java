@@ -12,4 +12,7 @@ public class WirelessEarpods implements Earpods {
     public void chargeCase() {
         System.out.println("Charging the earpods case.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

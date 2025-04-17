@@ -12,4 +12,7 @@ public class StreetPanipuri implements Panipuri {
     public void serve() {
         System.out.println("Serves panipuri with quick hands.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

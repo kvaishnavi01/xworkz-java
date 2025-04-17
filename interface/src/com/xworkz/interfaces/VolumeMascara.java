@@ -10,4 +10,7 @@ public class VolumeMascara implements Mascara {
     public void waterproofEffect() {
         System.out.println("Provides waterproof effect.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

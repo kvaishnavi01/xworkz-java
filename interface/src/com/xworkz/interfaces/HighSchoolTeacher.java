@@ -10,4 +10,7 @@ public class HighSchoolTeacher implements Teacher {
     public void evaluateExam() {
         System.out.println("Evaluates student exams.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

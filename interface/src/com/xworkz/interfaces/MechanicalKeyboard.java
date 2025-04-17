@@ -10,4 +10,7 @@ public class MechanicalKeyboard implements Keyboard {
     public void connect() {
         System.out.println("Connecting the keyboard to PC.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

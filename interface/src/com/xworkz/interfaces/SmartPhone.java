@@ -10,4 +10,7 @@ public class SmartPhone implements Phone {
     public void charge() {
         System.out.println("Charging the smartphone.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

@@ -10,4 +10,7 @@ public class DigitalLibrarian implements Librarian {
     public void organizeEvents() {
         System.out.println("Organizes digital and physical library events.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

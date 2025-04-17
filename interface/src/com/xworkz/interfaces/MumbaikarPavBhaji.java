@@ -12,4 +12,7 @@ public class MumbaikarPavBhaji implements PavBhaji {
     public void garnish() {
         System.out.println("Garnishes bhaji with coriander and onion.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

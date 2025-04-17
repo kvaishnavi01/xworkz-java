@@ -10,4 +10,7 @@ public class CarDriver implements Driver {
     public void collectFare() {
         System.out.println("Collects fare from passengers.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

@@ -10,4 +10,7 @@ public class RoseToner implements Toner {
     public void refreshSkin() {
         System.out.println("Gives a fresh feel with every spray.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

@@ -10,4 +10,7 @@ public class WeddingFlorist implements Florist {
     public void deliverBouquets() {
         System.out.println("Delivers wedding bouquets.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

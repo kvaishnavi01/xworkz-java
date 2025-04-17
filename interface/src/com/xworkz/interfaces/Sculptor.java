@@ -10,4 +10,7 @@ public class Sculptor implements Artist {
     public void collaborateOnProjects() {
         System.out.println("Collaborates with other artists on sculpture projects.");
     }
+    public String getDescription() {
+        return "Creating and sharing artistic works.";
+    }
 }

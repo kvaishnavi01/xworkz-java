@@ -10,4 +10,7 @@ public class Backpack implements Bag {
     public void unpack() {
         System.out.println("Unpacking the backpack.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

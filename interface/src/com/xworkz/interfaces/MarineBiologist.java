@@ -10,4 +10,7 @@ public class MarineBiologist implements ResearchScientist {
     public void presentFindings() {
         System.out.println("Presents research findings at conferences.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

@@ -12,4 +12,7 @@ public class MumbaiRagdaPattice implements RagdaPattice {
     public void serveWithGarnish() {
         System.out.println("Serves with onion, sev and chutney garnish.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

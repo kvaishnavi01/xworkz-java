@@ -10,4 +10,7 @@ public class DailyMoisturizer implements Moisturizer {
     public void preventDryness() {
         System.out.println("Prevents skin from drying out.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

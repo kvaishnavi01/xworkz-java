@@ -10,4 +10,7 @@ public class MountainTourGuide implements TourGuide {
     public void ensureSafety() {
         System.out.println("Ensures the safety of the tourists during the tour.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

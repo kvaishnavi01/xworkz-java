@@ -10,4 +10,7 @@ public class SEOContentWriter implements ContentWriter {
     public void researchTopic() {
         System.out.println("Researches topics for article writing.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

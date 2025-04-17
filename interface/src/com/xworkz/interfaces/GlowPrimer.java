@@ -10,4 +10,7 @@ public class GlowPrimer implements Primer {
     public void smoothTexture() {
         System.out.println("Smoothens skin texture.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

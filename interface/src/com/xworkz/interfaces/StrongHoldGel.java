@@ -10,4 +10,7 @@ public class StrongHoldGel implements HairGel {
     public void addTexture() {
         System.out.println("Adds texture and volume to the hairstyle.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

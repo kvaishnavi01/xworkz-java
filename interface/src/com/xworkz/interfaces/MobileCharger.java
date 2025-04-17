@@ -12,4 +12,7 @@ public class MobileCharger implements Charger {
     public void stopCharging() {
         System.out.println("Mobile charging stopped.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

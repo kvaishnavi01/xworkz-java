@@ -10,4 +10,7 @@ public class LuxuryFashionDesigner implements FashionDesigner {
     public void attendFashionShow() {
         System.out.println("Attends high-end fashion shows.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

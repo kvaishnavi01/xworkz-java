@@ -10,4 +10,7 @@ public class SteelSpoon implements Spoon {
     public void clean() {
         System.out.println("Cleaning the spoon.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

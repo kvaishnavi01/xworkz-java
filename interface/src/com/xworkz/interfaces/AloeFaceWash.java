@@ -10,4 +10,7 @@ public class AloeFaceWash implements FaceWash {
     public void controlOil() {
         System.out.println("Controls excess oil production.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

@@ -10,4 +10,7 @@ public class MatteLipstick implements Lipstick {
     public void sealColor() {
         System.out.println("Seals color on lips.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

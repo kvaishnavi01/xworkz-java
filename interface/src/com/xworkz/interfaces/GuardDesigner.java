@@ -13,6 +13,11 @@ public class GuardDesigner implements SecurityGuard, FashionDesigner {
         System.out.println("Checks designer badges.");
     }
 
+    @Override
+    public String getDescription() {
+        return SecurityGuard.super.getDescription();
+    }
+
     public void sketchDesigns() {
         System.out.println("Sketches security uniforms.");
     }

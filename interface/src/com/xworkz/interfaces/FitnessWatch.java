@@ -12,4 +12,7 @@ public class FitnessWatch implements SmartWatch {
     public void measureHeartRate() {
         System.out.println("Measuring heart rate.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

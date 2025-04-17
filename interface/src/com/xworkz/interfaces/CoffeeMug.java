@@ -10,4 +10,7 @@ public class CoffeeMug implements Mug {
     public void wash() {
         System.out.println("Washing the mug.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

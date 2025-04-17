@@ -10,4 +10,7 @@ public class OfficeChair implements Chair {
     public void roll() {
         System.out.println("Rolling the office chair.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

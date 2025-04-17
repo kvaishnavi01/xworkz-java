@@ -10,4 +10,7 @@ public class LiquidFoundation implements Foundation {
     public void stayLong() {
         System.out.println("Stays on face all day.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

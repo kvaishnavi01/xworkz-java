@@ -10,4 +10,7 @@ public class JazzMusician implements Musician {
     public void attendRehearsal() {
         System.out.println("Attends jazz music rehearsals.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

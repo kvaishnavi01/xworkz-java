@@ -10,4 +10,7 @@ public class ResidentialArchitect implements Architect {
     public void inspectConstruction() {
         System.out.println("Inspects construction progress.");
     }
+    public String getDescription() {
+        return "Designing and overseeing building construction.";
+    }
 }

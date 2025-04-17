@@ -12,4 +12,7 @@ public class SpicyDahipuri implements Dahipuri {
     public void plateUp() {
         System.out.println("Plates dahipuri with coriander and chutneys.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

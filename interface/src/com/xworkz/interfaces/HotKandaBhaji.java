@@ -12,4 +12,7 @@ public class HotKandaBhaji implements KandaBhaji {
     public void deepFry() {
         System.out.println("Deep fries onion bhaji till crispy.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

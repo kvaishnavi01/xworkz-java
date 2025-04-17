@@ -10,4 +10,7 @@ public class ShimmerHighlighter implements Highlighter {
     public void reflectLight() {
         System.out.println("Reflects light for a radiant look.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

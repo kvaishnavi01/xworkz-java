@@ -10,4 +10,7 @@ public class TVRemote implements Remote {
     public void changeChannel() {
         System.out.println("Changing TV channel.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

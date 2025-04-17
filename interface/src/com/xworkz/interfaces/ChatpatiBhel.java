@@ -12,4 +12,7 @@ public class ChatpatiBhel implements Bhel {
     public void squeezeLemon() {
         System.out.println("Squeezes lemon for tangy flavor.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

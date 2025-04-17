@@ -10,4 +10,7 @@ public class ArganBeardOil implements BeardOil {
     public void promoteGrowth() {
         System.out.println("Promotes healthy beard growth.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }

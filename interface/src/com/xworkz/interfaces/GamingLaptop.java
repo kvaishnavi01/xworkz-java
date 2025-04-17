@@ -12,4 +12,7 @@ public class GamingLaptop implements Laptop {
     public void shutDown() {
         System.out.println("Shutting down gaming laptop.");
     }
+    public String getDescription() {
+        return "This is a default method";
+    }
 }
