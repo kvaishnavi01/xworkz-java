@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Crypto Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body.dark {
+          background-color: #121212;
+          color: #ffffff;
+        }
+        .dark .table {
+          border-color: #444;
+        }
+        body.dark .theme-toggle {
+          color: #f0f0f0;
+          border-color: #f0f0f0;
+        }
+        body.dark .theme-toggle:hover {
+          background-color: #343a40;
+          color: white;
+          border-color: #f0f0f0;
+        }
+        .favorite {
+          color: gold;
+          cursor: pointer;
+        }
+        .not-favorite {
+          color: gray;
+          cursor: pointer;
+        }
+        .clock {
+          font-weight: 900;
+          margin-top: 0.4rem;
+          font-size: 1.9rem;
+          margin-left: 1rem;
+          font-family: monospace;
+        }
+
+        /* Styling coin name: remove underline, add subtle hover */
+        #cryptoTable td.coin-name {
+          cursor: pointer;
+          color: #00000;
+          text-decoration: none;
+        }
+        #cryptoTable td.coin-name:hover {
+          color: #0d6efd;
+          text-decoration: none;
+        }
+
+        /* Sorting cursor for all headers */
+        #cryptoTable th.sortable {
+          cursor: pointer;
+          user-select: none;
+          position: relative;
+          white-space: nowrap;
+        }
+
+        /* Sorting arrow inline next to header text */
+        #cryptoTable th.sortable .sort-arrow {
+          font-size: 0.75rem;
+          color: #bbb;
+          margin-left: 4px;
+          user-select: none;
+        }
+        #cryptoTable th.sortable.sorted-asc .sort-arrow {
+          color: #0d6efd;
+        }
+        #cryptoTable th.sortable.sorted-desc .sort-arrow {
+          color: #0d6efd;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
+        <h2 class="d-flex align-items-center">Crypto Tracker <span class="clock" id="clock"></span></h2>
+        <div class="d-flex align-items-center gap-2 mt-2 mt-md-0">
+            <select class="form-select" id="currencySelect" style="width: 100px;">
+                <option value="usd" selected>USD</option>
+                <option value="inr">INR</option>
+                <option value="eur">EUR</option>
+            </select>
+            <button class="btn btn-outline-dark theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+        </div>
+    </div>
+
+    <input type="text" class="form-control mb-3" id="searchInput" placeholder="Search by name or symbol..." />
+    <button class="btn btn-sm btn-primary mb-2" onclick="toggleFavorites()">
+        Toggle Favorites
+    </button>
+
+    <div class="table-responsive">
+        <table class="table table-striped" id="cryptoTable">
+            <thead>
+            <tr>
+                <th class="sortable" data-sort="favorite">Fav <span class="sort-arrow">⇅</span></th>
+                <th class="sortable" data-sort="name">Name <span class="sort-arrow">⇅</span></th>
+                <th class="sortable" data-sort="price">Price <span class="sort-arrow">⇅</span></th>
+                <th class="sortable" data-sort="change">Change <span class="sort-arrow">⇅</span></th>
+                <th class="sortable" data-sort="marketCap">Market Cap <span class="sort-arrow">⇅</span></th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="coinModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Coin Detail</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" style="height: 400px;">
+                <canvas id="chart" style="width:100%; height:100%;"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    let showFavoritesOnly = false;
+    let currency = 'usd';
+    const favorites = new Set(JSON.parse(localStorage.getItem('favorites') || '[]'));
+    let chartInstance = null;
+    const coinModal = new bootstrap.Modal(document.getElementById('coinModal'));
+
+    // Sorting state
+    let currentSort = { column: null, order: 'asc' };
+
+    let cachedCoins = [];
+
+    // Currency symbols mapping
+    const currencySymbols = {
+      usd: '$',
+      inr: '₹',
+      eur: '€'
+    };
+
+    // Currency names mapping for display next to symbol
+    const currencyNames = {
+      usd: 'USD',
+      inr: 'INR',
+      eur: 'EUR'
+    };
+
+    function formatNumber(num) {
+      if (num >= 1e12) return (num / 1e12).toFixed(2) + 'T';
+      if (num >= 1e9) return (num / 1e9).toFixed(2) + 'B';
+      if (num >= 1e6) return (num / 1e6).toFixed(2) + 'M';
+      return num.toLocaleString();
+    }
+
+    function compareValues(key, order = 'asc') {
+      return function(a, b) {
+        let valA, valB;
+        switch(key) {
+          case 'favorite':
+            valA = favorites.has(a.id) ? 1 : 0;
+            valB = favorites.has(b.id) ? 1 : 0;
+            break;
+          case 'name':
+            valA = a.name.toLowerCase();
+            valB = b.name.toLowerCase();
+            break;
+          case 'price':
+            valA = a.current_price;
+            valB = b.current_price;
+            break;
+          case 'change':
+            valA = a.price_change_percentage_24h ?? 0;
+            valB = b.price_change_percentage_24h ?? 0;
+            break;
+          case 'marketCap':
+            valA = a.market_cap ?? 0;
+            valB = b.market_cap ?? 0;
+            break;
+          default:
+            valA = a[key];
+            valB = b[key];
+        }
+
+        if (typeof valA === 'string') {
+          if (order === 'asc') return valA.localeCompare(valB);
+          else return valB.localeCompare(valA);
+        } else {
+          if (order === 'asc') return valA - valB;
+          else return valB - valA;
+        }
+      }
+    }
+
+    async function fetchCoins() {
+      try {
+        const res = await fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency}&order=market_cap_desc&per_page=100&page=1&sparkline=false`);
+        if (!res.ok) throw new Error('API fetch error');
+        const coins = await res.json();
+        cachedCoins = coins;
+        renderTable();
+      } catch (error) {
+        console.error(error);
+        const tbody = document.querySelector('#cryptoTable tbody');
+        tbody.innerHTML = `<tr><td colspan="5" class="text-center text-danger">Failed to load data. Try again later.</td></tr>`;
+      }
+    }
+
+    function renderTable() {
+      const search = document.getElementById('searchInput').value.toLowerCase();
+      const tbody = document.querySelector('#cryptoTable tbody');
+      tbody.innerHTML = '';
+
+      let filtered = cachedCoins.filter(c => (!showFavoritesOnly || favorites.has(c.id)) &&
+        (c.name.toLowerCase().includes(search) || c.symbol.toLowerCase().includes(search))
+      );
+
+      if (currentSort.column) {
+        filtered.sort(compareValues(currentSort.column, currentSort.order));
+      }
+
+      if (filtered.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="5" class="text-center">No coins found.</td></tr>`;
+        return;
+      }
+
+      for (const coin of filtered) {
+        const isFav = favorites.has(coin.id);
+        const change = coin.price_change_percentage_24h ?? 0;
+        tbody.insertAdjacentHTML('beforeend', `
+          <tr>
+            <td class="text-center">
+              <span class="${isFav ? 'favorite' : 'not-favorite'}" onclick="toggleFavorite('${coin.id}', event)">
+                &#9733;
+              </span>
+            </td>
+            <td class="coin-name" onclick="showChart('${coin.id}', '${coin.name}')">
+              ${coin.name} <span class="currency-name">(${coin.symbol.toUpperCase()})</span>
+            </td>
+            <td>${currencySymbols[currency]}${coin.current_price.toLocaleString()}</td>
+            <td class="${change >= 0 ? 'text-success' : 'text-danger'}">${change.toFixed(2)}%</td>
+            <td>${currencySymbols[currency]}${formatNumber(coin.market_cap)}</td>
+          </tr>
+        `);
+      }
+    }
+
+    function toggleFavorite(id, event) {
+      event.stopPropagation();
+      if (favorites.has(id)) favorites.delete(id);
+      else favorites.add(id);
+      localStorage.setItem('favorites', JSON.stringify([...favorites]));
+      renderTable();
+    }
+
+    function toggleFavorites() {
+      showFavoritesOnly = !showFavoritesOnly;
+      renderTable();
+    }
+
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+    }
+
+    function updateClock() {
+      const clock = document.getElementById('clock');
+      const now = new Date();
+      const timeStr = now.toLocaleTimeString();
+      clock.textContent = timeStr;
+    }
+
+    async function showChart(id, name) {
+      try {
+        const res = await fetch(`https://api.coingecko.com/api/v3/coins/${id}/market_chart?vs_currency=${currency}&days=30`);
+        if (!res.ok) throw new Error('Chart API error');
+        const data = await res.json();
+
+        const ctx = document.getElementById('chart').getContext('2d');
+        const labels = data.prices.map(p => new Date(p[0]).toLocaleDateString());
+        const prices = data.prices.map(p => p[1]);
+
+        if (chartInstance) chartInstance.destroy();
+
+        chartInstance = new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels,
+            datasets: [{
+              label: `${name} Price (${currencyNames[currency]})`,
+              data: prices,
+              borderColor: '#0d6efd',
+              backgroundColor: 'rgba(13,110,253,0.1)',
+              fill: true,
+              pointRadius: 0,
+              borderWidth: 2,
+              tension: 0.2
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              legend: { display: true },
+              tooltip: {
+                mode: 'index',
+                intersect: false,
+              }
+            },
+            scales: {
+              x: {
+                display: true,
+                title: { display: true, text: 'Date' }
+              },
+              y: {
+                display: true,
+                title: { display: true, text: `Price (${currencySymbols[currency]})` }
+              }
+            }
+          }
+        });
+
+        document.getElementById('modalTitle').textContent = `${name} - Last 30 Days Price Chart`;
+        coinModal.show();
+
+      } catch (e) {
+        alert('Failed to load chart data.');
+      }
+    }
+
+    document.getElementById('searchInput').addEventListener('input', renderTable);
+    document.getElementById('currencySelect').addEventListener('change', e => {
+      currency = e.target.value;
+      fetchCoins();
+    });
+
+    // Sorting headers
+    document.querySelectorAll('#cryptoTable th.sortable').forEach(th => {
+      th.addEventListener('click', () => {
+        const col = th.dataset.sort;
+        if (currentSort.column === col) {
+          currentSort.order = currentSort.order === 'asc' ? 'desc' : 'asc';
+        } else {
+          currentSort.column = col;
+          currentSort.order = 'asc';
+        }
+        // Update sort arrow styles
+        document.querySelectorAll('#cryptoTable th.sortable').forEach(header => {
+          header.classList.remove('sorted-asc', 'sorted-desc');
+          if (header.dataset.sort === currentSort.column) {
+            header.classList.add(currentSort.order === 'asc' ? 'sorted-asc' : 'sorted-desc');
+          }
+        });
+        renderTable();
+      });
+    });
+
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    fetchCoins();
+</script>
+</body>
+</html>
